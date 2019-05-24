@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.7.3">
+    <businessObjects>
+        <businessObject qualifiedName="com.audemars.piguet.model.MaintenanceRequest">
+            <description></description>
+            <fields>
+                <field type="STRING" length="255" name="company" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="customerNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lotNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="agreementNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="orderType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="facility" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="productStructureType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="service" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="orderQuantity" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="unitOfMeasure" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="warehouse" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="highestStatus" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="responsible" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="customersOrderNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lineNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lineSuffix" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="newQuotation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="employeeNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="workCenter" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="runTime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mCOAddressType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mCOAddressNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mtrlAddressFile" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mtrlAddressNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ourReference" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="yourReference" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="orderDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="requestedDeliveryDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="salesPerson" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="reasonCode" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="errorCode1" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="errorCode2" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="errorCode3" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="languageCode" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="productNumber" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mtrlAddressType" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="linesService" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

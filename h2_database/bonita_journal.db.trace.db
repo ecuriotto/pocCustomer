@@ -1,0 +1,6 @@
+10-03 08:51:31 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Table "SEQUENCE" not found; SQL statement:
+select count(*) from sequence [42102-175]
+10-03 08:51:32 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Table "SEQUENCE" not found; SQL statement:
+select count(*) from sequence [42102-175]

@@ -1,0 +1,117 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "AdaptableStraps",
+  "name" : "AdaptableStraps",
+  "lastUpdate" : 1538576912033,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : "getAdaptableStraps.LstAdaptableStraps"
+      }
+    },
+    "reference" : "c454c663-a828-4a25-89d2-b71701caa7b8",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "srcType" : {
+          "type" : "constant",
+          "value" : "URL"
+        },
+        "url" : {
+          "type" : "expression",
+          "value" : "idmstore+$item.strapNumber+\"_3.png\""
+        },
+        "assetName" : {
+          "type" : "constant"
+        },
+        "alt" : {
+          "type" : "interpolation"
+        }
+      },
+      "reference" : "3ad94208-cba9-4f5c-8d05-1d66c28388ef",
+      "id" : "pbImage"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "<ul>\n<li>{{$item.strapReference}}</li>\n<li><b>Material: </b>{{$item.materialDscr}}</li>\n<li><b>Color: </b>{{$item.colorDscr}}</li>\n<li><b>Size: </b>{{$item.size}}</li>\n</ul>"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "3cbfa08f-0069-4390-a49e-99ff625283c9",
+      "id" : "pbText"
+    } ] ]
+  } ] ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "watch" : {
+      "type" : "constant",
+      "exposed" : true
+    },
+    "getAdaptableStraps" : {
+      "type" : "url",
+      "value" : "../API/extension/GetAdaptableStraps?serial={{watch.ProductNumber}}",
+      "exposed" : false
+    },
+    "idmstore" : {
+      "type" : "constant",
+      "value" : "https://idmstore.audemarspiguet.com/item_attachments/",
+      "exposed" : false
+    }
+  },
+  "type" : "fragment"
+}

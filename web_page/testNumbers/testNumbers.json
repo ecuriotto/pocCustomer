@@ -1,0 +1,62 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "testNumbers",
+  "name" : "testNumbers",
+  "lastUpdate" : 1538751264891,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "{{cucu.number | number}}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "223c21a4-1446-4f3f-9150-a2927f33897b",
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "a42eb4f2-d4f8-44de-b522-c0f9f8001778",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "548183f1-fa67-4219-978b-7b986172531a",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "cucu" : {
+      "type" : "json",
+      "value" : "{\"number\":1234.1}",
+      "exposed" : false
+    }
+  },
+  "uuid" : "2a543674-b1b5-4a28-986b-1a07346ab2ae",
+  "type" : "page"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="AP" version="1.0" profile="User" homePage="dashboard" state="ACTIVATED" layout="custompage_defaultlayout" theme="custompage_bootstrapdefaulttheme">
+        <displayName>AudemarsPiguet</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_cdnAP" token="cdn"/>
+            <applicationPage customPage="custompage_DashBoard2" token="dashboard2"/>
+            <applicationPage customPage="custompage_DashBoard" token="dashboard"/>
+            <applicationPage customPage="custompage_homeAP" token="searchWatches"/>
+            <applicationPage customPage="custompage_tasklist" token="taskList"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="dashboard">
+                <displayName>Dashboard</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="searchWatches">
+                <displayName>Search Watch</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="taskList">
+                <displayName>TaskList</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

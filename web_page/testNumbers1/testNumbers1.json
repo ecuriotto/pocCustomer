@@ -1,0 +1,24 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "testNumbers1",
+  "name" : "testNumbers",
+  "lastUpdate" : 1538751214247,
+  "rows" : [ [ ] ],
+  "assets" : [ {
+    "id" : "068258f2-7e7b-40f0-92c9-5b825c3a33a2",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "5a172cde-2844-454b-9dd9-20d7fb2c338a",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "uuid" : "fb4a6fd1-9a51-4fbf-a920-24d86bc7b808",
+  "type" : "page"
+}

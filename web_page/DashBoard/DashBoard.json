@@ -1,0 +1,719 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "DashBoard",
+  "name" : "DashBoard",
+  "lastUpdate" : 1538751770678,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Create new Request"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "process"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant",
+        "value" : "Manteinance Request"
+      },
+      "processVersion" : {
+        "type" : "constant",
+        "value" : "2.0"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "695e7eec-67ab-468d-bbfe-0a8091911c81",
+    "id" : "pbLink"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Notify Response Customer"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "process"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant",
+        "value" : "SendMsg"
+      },
+      "processVersion" : {
+        "type" : "constant",
+        "value" : "1.0"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "warning"
+      }
+    },
+    "reference" : "1ea6764b-eb7f-4708-8e04-64d7bd7ff2b1",
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "ba10fae4-3dcc-42e6-8c9d-da922285c699",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Tasks waiting to be executed"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "7f0b8520-36bb-4317-bc27-883e9fa47efd",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "<hr/>"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "504b4977-0c80-4539-ade1-8016a405fe43",
+      "id" : "pbText"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "Pie"
+        },
+        "data" : {
+          "type" : "expression",
+          "value" : "taskCounters.values"
+        },
+        "labels" : {
+          "type" : "expression",
+          "value" : "taskCounters.labels"
+        },
+        "setLabels" : {
+          "type" : "constant",
+          "value" : [ "Default set label" ]
+        },
+        "legendHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "colors" : {
+          "type" : "constant",
+          "value" : [ ]
+        },
+        "options" : {
+          "type" : "constant"
+        }
+      },
+      "reference" : "dc03be72-7e57-4911-95d1-230be2667299",
+      "id" : "pbChart"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "headers" : {
+          "type" : "constant",
+          "value" : [ "Name", "Counter" ]
+        },
+        "content" : {
+          "type" : "expression",
+          "value" : "taskCounters.table"
+        },
+        "columnsKey" : {
+          "type" : "constant",
+          "value" : [ "name", "counter" ]
+        },
+        "selectedRow" : {
+          "type" : "variable",
+          "value" : "variables.taskSelected"
+        }
+      },
+      "reference" : "d1aac2e2-1bc7-4eb5-86ea-73d34f146c87",
+      "id" : "pbTable"
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "<hr/>"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "6172bb7a-1359-451f-8222-e3800b75fcd6",
+    "id" : "pbText"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "83dce4c9-70f6-4b4b-b0b4-43e628767ab4",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Summary by Case"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "b740e94f-99ff-49e2-a183-300dcea87c11",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "<hr/>"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "5846b7f9-4d04-4b5b-aeab-89623de63e97",
+      "id" : "pbText"
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "29367bcd-17fe-46be-a08d-e57aba6af4ea",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Filter MCNumber"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation"
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "variables.filter.searchIndex1Value"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "text"
+          },
+          "min" : {
+            "type" : "constant"
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "ceb7c43e-159e-4bfc-8d14-7dc2a2b60d35",
+        "id" : "pbInput"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [ "CaseId", "MCNumber", "Status", "Start Date", "End Date", "Started By" ]
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Variable"
+          },
+          "apiUrl" : {
+            "type" : "constant",
+            "value" : "../API/"
+          },
+          "params" : {
+            "type" : "constant"
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "exp_prepareCases"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [ "caseId", "searchIndex1Value", "state", "start", "end_date", "started_by.userName" ]
+          },
+          "sortColumns" : {
+            "type" : "constant"
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : "variables.selectedCase"
+          },
+          "pageSize" : {
+            "type" : "constant",
+            "value" : 20
+          },
+          "filter" : {
+            "type" : "expression",
+            "value" : "variables.filter"
+          }
+        },
+        "reference" : "c0696d25-5710-4917-b240-8e70992543ea",
+        "id" : "pbDataTable"
+      } ] ]
+    }, {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "c186a609-eb9c-4565-a36f-ee1ed0d38e8d",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "8c3b1dd5-932a-4376-9d99-fc41a6bdc3bf",
+        "id" : "progressTasks",
+        "binding" : {
+          "tasks" : "",
+          "caseId" : "variables.selectedCase.caseId"
+        }
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "jumbotron"
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "variables.selectedCase.caseId"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Please select one case to see it's details"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "21fd57e2-b95b-4b06-8102-aceb2ef3f60a",
+        "id" : "pbText"
+      } ] ]
+    } ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "3f7a6b77-1a4e-4347-9acb-d12f8c7ddc28",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "e2a8e799-73cd-41e9-8fb8-dc0587e0481c",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "variables" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "cases" : {
+      "type" : "url",
+      "value" : "../API/bpm/case?c=1000&p=0&f=processDefinitionId={{process[0].id}}&d=started_by",
+      "exposed" : false
+    },
+    "process" : {
+      "type" : "url",
+      "value" : "../API/bpm/process?c=1&p=0&f=name=Manteinance%20Request",
+      "exposed" : false
+    },
+    "archivedCases" : {
+      "type" : "url",
+      "value" : "../API/bpm/archivedCase?c=1000&p=0&f=processDefinitionId={{process[0].id}}&d=started_by",
+      "exposed" : false
+    },
+    "exp_prepareCases" : {
+      "type" : "expression",
+      "value" : "var output = [];\nif($data.variables.taskSelected && $data.cases){\n    var cases = $data.variables.taskSelected.cases;\n    \n    $data.cases.forEach(function(item){\n        if(cases.indexOf(item.id)>=0 ){\n            var c = angular.copy(item);\n            c.caseId = c.id;\n            c.state = \"On Execution\";\n            output.push(c)\n        }\n    });\n    return output;\n}else{\n\nif($data.cases && $data.archivedCases){\n    $data.cases.forEach(function(item){\n       var c = angular.copy(item);\n       c.caseId = c.id;\n       c.state = \"On Execution\";\n       output.push(c)\n    });\n    $data.archivedCases.forEach(function(item){\n       var c = angular.copy(item);\n       c.caseId = c.sourceObjectId;\n       c.state = \"Completed\";\n       output.push(c)\n    });\n    return output;\n}\n}",
+      "exposed" : false
+    },
+    "taskCounters" : {
+      "type" : "url",
+      "value" : "../API/extension/tasksCounters?processId={{process[0].id}}",
+      "exposed" : false
+    }
+  },
+  "uuid" : "7f3a0b04-ff6c-47a2-b410-7198be8212cf",
+  "type" : "page"
+}

@@ -1,0 +1,20 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "customWatchStatus",
+  "name" : "WatchStatus",
+  "lastUpdate" : 1538635142040,
+  "template" : "<img ng-src=\"{{urls.stolen}}\" alt=\"Description\" />\n<img ng-src=\"{{urls.unrepairable}}\" alt=\"Description\" />\n<img ng-src=\"{{urls.warranty}}\" alt=\"Description\" />\n\n",
+  "controller" : "/**\n * The controller is a JavaScript function that augments the AngularJS scope and exposes functions that can be used in the custom widget template\n * \n * Custom widget properties defined on the right can be used as variables in a controller with $scope.properties\n * To use AngularJS standard services, you must declare them in the main function arguments.\n * \n * You can leave the controller empty if you do not need it.\n */\nfunction ($scope) {\n    var urlBase = \"/bonita/portal/resource/app/AP/cdn/content/assets/img/\";\n    $scope.urls={\n        \"stolen\":urlBase+($scope.properties.watch.StatusCode===\"001\"?\"stolen_gold.png\":\"stolen_grey.png\"),\n        \"unrepairable\":urlBase+($scope.properties.watch.StatusCode===\"003\"?\"unrepairable_gold.png\":\"unrepairable_grey.png\"),\n        \"warranty\":urlBase+($scope.properties.watch.repairWarranties>0?\"AP_Warranty_Gold.png\":\"AP_Warranty_Grey.png\"),\n    }\n}",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "Watch Object",
+    "name" : "watch",
+    "type" : "text",
+    "defaultValue" : "This is the initial value",
+    "bond" : "expression"
+  } ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

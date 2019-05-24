@@ -1,0 +1,96 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "cdnAP",
+  "name" : "cdnAP",
+  "lastUpdate" : 1538730776035,
+  "rows" : [ [ ] ],
+  "assets" : [ {
+    "id" : "886d6220-3950-43f0-9a53-1ba8a015f1d7",
+    "name" : "search by watch ref.png",
+    "type" : "img",
+    "order" : 5,
+    "external" : false
+  }, {
+    "id" : "4342d9cf-3767-47b8-8c41-5fdc715174ef",
+    "name" : "AP_BRAND_SEAL.png",
+    "type" : "img",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "dd4e5109-28a2-44cf-9939-5f4e2073bc11",
+    "name" : "icons8-expand-64.png",
+    "type" : "img",
+    "order" : 3,
+    "external" : false
+  }, {
+    "id" : "0c7a1810-9588-41a7-a8f9-3a1cc281f1e9",
+    "name" : "stolen_grey.png",
+    "type" : "img",
+    "order" : 9,
+    "external" : false
+  }, {
+    "id" : "4f366325-91f4-4437-ac5c-929cca49a451",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "14cf3516-c852-4ce0-99b7-15e33ffb311a",
+    "name" : "stolen_gold.png",
+    "type" : "img",
+    "order" : 8,
+    "external" : false
+  }, {
+    "id" : "786cea3d-7542-4bda-9448-65c7343edd4d",
+    "name" : "unrepairable_gold.png",
+    "type" : "img",
+    "order" : 10,
+    "external" : false
+  }, {
+    "id" : "b2d5c342-c5ee-42ce-aa46-c01351757b3b",
+    "name" : "moment.min.js",
+    "type" : "js",
+    "order" : 12,
+    "external" : false
+  }, {
+    "id" : "0831f1f2-2240-4e4c-963c-716c877c6e02",
+    "name" : "AP_Warranty_Gold.png",
+    "type" : "img",
+    "order" : 6,
+    "external" : false
+  }, {
+    "id" : "9c0b9067-1baf-4185-8d28-e8ac5ceb650c",
+    "name" : "icons8-collapse-64.png",
+    "type" : "img",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "587ae6ab-015a-49e8-a8f2-0eb669cc51c6",
+    "name" : "unrepairable_grey.png",
+    "type" : "img",
+    "order" : 11,
+    "external" : false
+  }, {
+    "id" : "d912a057-5d24-44c7-86f1-1985875a6eb8",
+    "name" : "search by serial.png",
+    "type" : "img",
+    "order" : 4,
+    "external" : false
+  }, {
+    "id" : "f490b6c1-557c-4228-9c03-c6b7d14a7920",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "8237b360-31be-4cb1-b1c0-3ec2a36f3391",
+    "name" : "AP_Warranty_Grey.png",
+    "type" : "img",
+    "order" : 7,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : { },
+  "uuid" : "dccc5065-f0ab-4d92-88b9-f6c2eb45e8db",
+  "type" : "page"
+}

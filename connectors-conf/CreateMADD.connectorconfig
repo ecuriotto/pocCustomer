@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="webservice" version="1.0.1" name="CreateMADD" modelVersion="7.6.0-002">
+  <parameters key="serviceNS">
+    <expression xsi:type="expression:Expression" name="APWSService" content="APWSService" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="serviceName">
+    <expression xsi:type="expression:Expression" name="http://audemarspiguet.com/APWS" content="http://audemarspiguet.com/APWS" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="portName">
+    <expression xsi:type="expression:Expression" name="APWSPort" content="APWSPort" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="envelope">
+    <expression xsi:type="expression:Expression" name="createEnvelope()" content="return &quot;&quot;&quot;&#xD;&#xA;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:cred=&quot;http://lawson.com/ws/credentials&quot; xmlns:cos=&quot;http://audemarspiguet.com/APWS/COS100MIAdd&quot;>&#xD;&#xA;   &lt;soapenv:Body>&#xD;&#xA;      &lt;cos:COS100MIAdd maxRecords=&quot;100&quot;>&#xD;&#xA;         &lt;!--Zero or more repetitions:-->&#xD;&#xA;         &lt;cos:AddItem>&#xD;&#xA;&quot;&quot;&quot;+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getCompany()?&quot;&lt;cos:Company>&quot;+request.getCompany()+&quot;&lt;/cos:Company>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getCustomerNumber() ?&quot;&lt;cos:CustomerNumber>&quot;+request.getCustomerNumber()+&quot;&lt;/cos:CustomerNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getProductNumber() ?&quot;&lt;cos:ProductNumber>&quot;+request.getProductNumber()+&quot;&lt;/cos:ProductNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getLotNumber() ?&quot;&lt;cos:LotNumber>&quot;+request.getLotNumber()+&quot;&lt;/cos:LotNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getAgreementNumber() ?&quot;&lt;cos:AgreementNumber>&quot;+request.getAgreementNumber()+&quot;&lt;/cos:AgreementNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getOrderType() ?&quot;&lt;cos:OrderType>&quot;+request.getOrderType()+&quot;&lt;/cos:OrderType>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getFacility() ?&quot;&lt;cos:Facility>&quot;+request.getFacility()+&quot;&lt;/cos:Facility>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getProductStructureType() ?&quot;&lt;cos:ProductStructureType>&quot;+request.getProductStructureType()+&quot;&lt;/cos:ProductStructureType>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getService() ?&quot;&lt;cos:Service>&quot;+request.getService()+&quot;&lt;/cos:Service>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getOrderQuantity() ?&quot;&lt;cos:OrderQuantity>&quot;+request.getOrderQuantity()+&quot;&lt;/cos:OrderQuantity>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getUnitOfMeasure() ?&quot;&lt;cos:UnitOfMeasure>&quot;+request.getUnitOfMeasure()+&quot;&lt;/cos:UnitOfMeasure>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getWarehouse() ?&quot;&lt;cos:Warehouse>&quot;+request.getWarehouse()+&quot;&lt;/cos:Warehouse>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getHighestStatus() ?&quot;&lt;cos:HighestStatus>&quot;+request.getHighestStatus()+&quot;&lt;/cos:HighestStatus>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getResponsible() ?&quot;&lt;cos:Responsible>&quot;+request.getResponsible()+&quot;&lt;/cos:Responsible>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getCustomersOrderNumber() ?&quot;&lt;cos:CustomersOrderNumber>&quot;+request.getCustomersOrderNumber()+&quot;&lt;/cos:CustomersOrderNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getLineNumber() ?&quot;&lt;cos:LineNumber>&quot;+request.getLineNumber()+&quot;&lt;/cos:LineNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getLineSuffix() ?&quot;&lt;cos:LineSuffix>&quot;+request.getLineSuffix()+&quot;&lt;/cos:LineSuffix>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getNewQuotation() ?&quot;&lt;cos:NewQuotation>&quot;+request.getNewQuotation()+&quot;&lt;/cos:NewQuotation>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getEmployeeNumber() ?&quot;&lt;cos:EmployeeNumber>&quot;+request.getEmployeeNumber()+&quot;&lt;/cos:EmployeeNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getWorkCenter() ?&quot;&lt;cos:WorkCenter>&quot;+request.getWorkCenter()+&quot;&lt;/cos:WorkCenter>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getRunTime() ?&quot;&lt;cos:RunTime>&quot;+request.getRunTime()+&quot;&lt;/cos:RunTime>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getMCOAddressType() ?&quot;&lt;cos:MCOAddressType>&quot;+request.getMCOAddressType()+&quot;&lt;/cos:MCOAddressType>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getMCOAddressNumber() ?&quot;&lt;cos:MCOAddressNumber>&quot;+request.getMCOAddressNumber()+&quot;&lt;/cos:MCOAddressNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getMtrlAddressFile() ?&quot;&lt;cos:MtrlAddressFile>&quot;+request.getMtrlAddressFile()+&quot;&lt;/cos:MtrlAddressFile>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getMtrlAddressType() ?&quot;&lt;cos:MtrlAddressType>&quot;+request.getMtrlAddressType()+&quot;&lt;/cos:MtrlAddressType>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getMtrlAddressNumber() ?&quot;&lt;cos:MtrlAddressNumber>&quot;+request.getMtrlAddressNumber()+&quot;&lt;/cos:MtrlAddressNumber>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getOurReference() ?&quot;&lt;cos:OurReference>&quot;+request.getOurReference()+&quot;&lt;/cos:OurReference>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getYourReference() ?&quot;&lt;cos:YourReference>&quot;+request.getYourReference()+&quot;&lt;/cos:YourReference>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getOrderDate() ?&quot;&lt;cos:OrderDate>&quot;+request.getOrderDate()+&quot;&lt;/cos:OrderDate>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getRequestedDeliveryDate() ?&quot;&lt;cos:RequestedDeliveryDate>&quot;+request.getRequestedDeliveryDate()+&quot;&lt;/cos:RequestedDeliveryDate>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getSalesPerson() ?&quot;&lt;cos:SalesPerson>&quot;+request.getSalesPerson()+&quot;&lt;/cos:SalesPerson>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getReasonCode() ?&quot;&lt;cos:ReasonCode>&quot;+request.getReasonCode()+&quot;&lt;/cos:ReasonCode>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getErrorCode1() ?&quot;&lt;cos:ErrorCode1>&quot;+request.getErrorCode1()+&quot;&lt;/cos:ErrorCode1>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getErrorCode2() ?&quot;&lt;cos:ErrorCode2>&quot;+request.getErrorCode2()+&quot;&lt;/cos:ErrorCode2>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getErrorCode3() ?&quot;&lt;cos:ErrorCode3>&quot;+request.getErrorCode3()+&quot;&lt;/cos:ErrorCode3>&quot;:&quot;&quot;)+&#xD;&#xA;&#x9;&#x9;&#x9;(request.getLanguageCode() ?&quot;&lt;cos:LanguageCode>&quot;+request.getLanguageCode()+&quot;&lt;/cos:LanguageCode>&quot;:&quot;&quot;)+&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#x9;         &lt;/cos:AddItem>&#xD;&#xA;      &lt;/cos:COS100MIAdd>&#xD;&#xA;   &lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:BusinessObjectData" name="request" className="com.audemars.piguet.model.MaintenanceRequest">
+        <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/Audemars/diagrams/diagram-1.0.proc#_ZkspyMfaEeiFtNN0VXxAGQ"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="endpointAddress">
+    <expression xsi:type="expression:Expression" name="wsEndPointAddress" content="wsEndPointAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
+      <referencedElements xsi:type="parameter:Parameter" name="wsEndPointAddress" typeClassname="java.lang.String"/>
+    </expression>
+  </parameters>
+  <parameters key="binding">
+    <expression xsi:type="expression:Expression" name="http://schemas.xmlsoap.org/wsdl/soap/http" content="http://schemas.xmlsoap.org/wsdl/soap/http" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="soapAction">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="userName">
+    <expression xsi:type="expression:Expression" name="apexeu" content="apexeu" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="xl3LlUVJAo(z" content="xl3LlUVJAo(z" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="buildResponseDocumentEnvelope">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="buildResponseDocumentBody">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="printRequestAndResponse">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="httpHeaders">
+    <expression xsi:type="expression:TableExpression"/>
+  </parameters>
+  <parameters key="proxyProtocol">
+    <expression xsi:type="expression:Expression" name="HTTP" content="HTTP" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyHost">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyPort">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyUser">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="proxyPassword">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>

@@ -1,0 +1,273 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "progressBar",
+  "name" : "progressBar",
+  "lastUpdate" : 1538673965996,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "value" : {
+        "type" : "expression",
+        "value" : "data"
+      }
+    },
+    "reference" : "30eb72b8-1a95-4eb9-920a-9efb71f87f65",
+    "id" : "customProgressBar"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Ready"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "data.reached_state_date"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "a8bf1813-5010-41e3-915c-cd8b14cc3dee",
+    "id" : "pbInput"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Assigned"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "data.assigned_date"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "2ee73b42-d219-4c5d-a854-baf9c16b0ade",
+    "id" : "pbInput"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "archived"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "placeholder" : {
+        "type" : "interpolation"
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "data.archivedDate"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "6864c6c0-7a9c-46a6-8e85-718a79837fcd",
+    "id" : "pbInput"
+  } ] ],
+  "assets" : [ {
+    "id" : "29b5d5b8-58b4-4ce4-b1e1-c39d1c8104ec",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "e3e0c60f-6a5b-4f03-a04d-e4c096c8c143",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "data" : {
+      "type" : "json",
+      "value" : "{\r\n    \"displayDescription\": \"\",\r\n    \"executedBy\": \"0\",\r\n    \"archivedDate\": \"2018-10-04 16:53:03.870\",\r\n    \"rootContainerId\": \"1055\",\r\n    \"assigned_date\": \"2018-10-04 16:52:57.213\",\r\n    \"displayName\": \"7000307957 - Diagnostiquer\",\r\n    \"executedBySubstitute\": \"0\",\r\n    \"dueDate\": \"\",\r\n    \"description\": \"\",\r\n    \"sourceObjectId\": \"20208\",\r\n    \"type\": \"USER_TASK\",\r\n    \"priority\": \"normal\",\r\n    \"actorId\": \"171\",\r\n    \"processId\": \"5318228889300487871\",\r\n    \"caseId\": \"1055\",\r\n    \"name\": \"diagnostiquer\",\r\n    \"reached_state_date\": \"2018-10-04 16:52:51.921\",\r\n    \"rootCaseId\": \"1055\",\r\n    \"id\": \"80250\",\r\n    \"state\": \"ready\",\r\n    \"parentCaseId\": \"1055\",\r\n    \"last_update_date\": \"2018-10-04 16:52:51.921\",\r\n    \"assigned_id\": \"4\"\r\n  }",
+      "exposed" : false
+    }
+  },
+  "uuid" : "f31c26a2-de07-45f1-b5d9-dc3abaeef8d6",
+  "type" : "page"
+}

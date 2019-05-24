@@ -1,0 +1,26 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "customExpTableBillOfMaterial",
+  "name" : "ExpTableBillOfMaterial",
+  "lastUpdate" : 1538638610204,
+  "template" : "\r\n    <div>\r\n      <table class=\"table table-condensed table-hover\">\r\n          <thead>\r\n            <tr>\r\n                <th>L1</th>\r\n                <th>L2</th>\r\n                <th>level</th>\r\n                <th>componentNumber</th>\r\n                <th>itemNumber</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody ng-repeat=\"l1 in properties.values\" >\r\n            <tr  ng-click=\"selectToDisplay(l1)\">\r\n                <td><img ng-if=\"l1.isLeaf === '0' && !isSelected(l1)\" style=\"height:20px\" ng-click=\"toggleRow(l1,undefined)\" src=\"/bonita/portal/resource/app/AP/cdn/content/assets/img/icons8-expand-64.png\">\r\n                <img ng-if=\"l1.isLeaf === '0' && isSelected(l1)\" style=\"height:20px\"  ng-click=\"toggleRow(l1,undefined)\" src=\"/bonita/portal/resource/app/AP/cdn/content/assets/img/icons8-expand-64.png\"></td>\r\n                <td></td>\r\n                <td>{{l1.level}}</td>\r\n                <td>{{l1.componentNumber}}</td>\r\n                <td>{{l1.itemNumber}}</td>\r\n            </tr>\r\n            <tr ng-if=\"isSelected(l1)\" ng-repeat-start=\"l2 in l1.componentList\"  ng-click=\"selectToDisplay(l2)\" >\r\n                <td></td>\r\n                <!--<td><a ng-if=\"l2.isLeaf === '0'\" ng-click=\"toggleRow(l2,l1)\" href=\"\">++</a></td>-->\r\n                <td><img ng-if=\"l2.isLeaf === '0' && !isSelected(l2)\" style=\"height:20px\" ng-click=\"toggleRow(l2,l1)\" src=\"/bonita/portal/resource/app/AP/cdn/content/assets/img/icons8-expand-64.png\">\r\n                <img ng-if=\"l2.isLeaf === '0' && isSelected(l2)\" style=\"height:20px\"  ng-click=\"toggleRow(l2,l1)\" src=\"/bonita/portal/resource/app/AP/cdn/content/assets/img/icons8-expand-64.png\"></td>\r\n                <td>{{l2.level}}</td>\r\n                <td>{{l2.componentNumber}}</td>\r\n                <td>{{l2.itemNumber}}</td>\r\n            </tr>\r\n            <tr ng-repeat-end ng-if=\"isSelected(l2)\"  ng-repeat=\"l3 in l2.componentList\" ng-click=\"selectToDisplay(l3)\" >\r\n                <td></td>\r\n                <td></td>\r\n                <td>{{l3.level}}</td>\r\n                <td>{{l3.componentNumber}}</td>\r\n                <td>{{l3.itemNumber}}</td>\r\n            </tr>\r\n          </tbody>\r\n      </table>\r\n    </div>",
+  "controller" : "/**\n * The controller is a JavaScript function that augments the AngularJS scope and exposes functions that can be used in the custom widget template\n * \n * Custom widget properties defined on the right can be used as variables in a controller with $scope.properties\n * To use AngularJS standard services, you must declare them in the main function arguments.\n * \n * You can leave the controller empty if you do not need it.\n */\nfunction ($scope) {\n    \n    $scope.selectToDisplay = function(item){\n        $scope.properties.selected = item;\n    }\n    \n    $scope.toggleRow = function (item,parent) {\n        if($scope.selected && $scope.selected.componentNumber == item.componentNumber ){\n            $scope.selected = parent;\n        }else{\n            $scope.selected = item;\n        }\n        \n    };\n\n    $scope.isSelected = function (item) {\n        var output = false;\n        //first level\n        if($scope.selected && item.componentNumber === $scope.selected.componentNumber )\n            output = true;\n        /*\n        //2nd level selected display 3rd level\n        if($scope.selected && item.itemNumber === $scope.selected.componentNumber )\n            output = true;\n        */\n        \n            //RARE 3rd level selected keeps 2nd level displayed\n        if($scope.selected && item.componentNumber === $scope.selected.itemNumber )\n            output = true;\n        \n        return output;\n    };\n}",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "Values",
+    "name" : "values",
+    "type" : "text",
+    "defaultValue" : "This is the initial value",
+    "bond" : "expression"
+  }, {
+    "label" : "selected",
+    "name" : "selected",
+    "caption" : "selected",
+    "type" : "text",
+    "bond" : "variable"
+  } ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

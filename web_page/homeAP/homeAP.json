@@ -1,0 +1,860 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "homeAP",
+  "name" : "homeAP",
+  "lastUpdate" : 1538639489706,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "f6bb4ff8-e067-4943-a134-7f49a36e7c64",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Search"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "8b7b68cf-3af8-41c6-a492-b0a88c14d810",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "05303171-450b-4b3e-8131-a99d91f68e4e",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "7c30ed17-bc68-4efe-9369-6482a74dbc53",
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "d6101580-31a9-4e6c-95f5-b0df5634479e",
+          "id" : "pbContainer",
+          "rows" : [ [ {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 10,
+              "lg" : 10
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : ""
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "required" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "minLength" : {
+                "type" : "constant",
+                "value" : 4
+              },
+              "maxLength" : {
+                "type" : "constant"
+              },
+              "readOnly" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "labelHidden" : {
+                "type" : "constant",
+                "value" : true
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "Default label"
+              },
+              "labelPosition" : {
+                "type" : "constant",
+                "value" : "top"
+              },
+              "labelWidth" : {
+                "type" : "constant",
+                "value" : 4
+              },
+              "placeholder" : {
+                "type" : "interpolation",
+                "value" : "Search by Serial Number or Watch Reference"
+              },
+              "value" : {
+                "type" : "variable",
+                "value" : "variables.serial"
+              },
+              "type" : {
+                "type" : "constant",
+                "value" : "text"
+              },
+              "min" : {
+                "type" : "constant"
+              },
+              "max" : {
+                "type" : "constant"
+              },
+              "step" : {
+                "type" : "constant",
+                "value" : 1
+              }
+            },
+            "reference" : "5eedd461-939a-44cb-a084-aecaa1705b25",
+            "id" : "pbInput"
+          }, {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 1,
+              "lg" : 1
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : "imgButton"
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "disabled" : {
+                "type" : "expression",
+                "value" : "$form.$invalid"
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "<img src='/bonita/portal/resource/app/AP/cdn/content/assets/img/search by serial.png'>"
+              },
+              "alignment" : {
+                "type" : "constant",
+                "value" : "left"
+              },
+              "buttonStyle" : {
+                "type" : "constant",
+                "value" : "default"
+              },
+              "action" : {
+                "type" : "constant",
+                "value" : "GET"
+              },
+              "url" : {
+                "type" : "interpolation",
+                "value" : "../API/extension/GetWatcheBySN?serial={{variables.serial.length>=4?variables.serial:\"\"}}"
+              },
+              "dataToSend" : {
+                "type" : "constant"
+              },
+              "dataFromSuccess" : {
+                "type" : "variable",
+                "value" : "variables.getWatches"
+              },
+              "dataFromError" : {
+                "type" : "variable",
+                "value" : "variables.error"
+              },
+              "targetUrlOnSuccess" : {
+                "type" : "interpolation"
+              },
+              "collectionToModify" : {
+                "type" : "variable"
+              },
+              "collectionPosition" : {
+                "type" : "constant",
+                "value" : "Last"
+              },
+              "valueToAdd" : {
+                "type" : "constant"
+              },
+              "removeItem" : {
+                "type" : "variable"
+              }
+            },
+            "reference" : "6ce525fe-c890-40f3-b22b-f4b8b20d4505",
+            "id" : "pbButton"
+          }, {
+            "type" : "component",
+            "dimension" : {
+              "xs" : 12,
+              "sm" : 12,
+              "md" : 1,
+              "lg" : 1
+            },
+            "propertyValues" : {
+              "cssClasses" : {
+                "type" : "constant",
+                "value" : "imgButton"
+              },
+              "hidden" : {
+                "type" : "constant",
+                "value" : false
+              },
+              "disabled" : {
+                "type" : "expression",
+                "value" : "$form.$invalid"
+              },
+              "label" : {
+                "type" : "interpolation",
+                "value" : "<img src='/bonita/portal/resource/app/AP/cdn/content/assets/img/search by watch ref.png'>"
+              },
+              "alignment" : {
+                "type" : "constant",
+                "value" : "left"
+              },
+              "buttonStyle" : {
+                "type" : "constant",
+                "value" : "default"
+              },
+              "action" : {
+                "type" : "constant",
+                "value" : "GET"
+              },
+              "url" : {
+                "type" : "interpolation",
+                "value" : "../API/extension/GetWatchByRef?serial={{variables.serial.length>=4?variables.serial:\"\"}}"
+              },
+              "dataToSend" : {
+                "type" : "constant"
+              },
+              "dataFromSuccess" : {
+                "type" : "variable",
+                "value" : "variables.getWatches"
+              },
+              "dataFromError" : {
+                "type" : "variable",
+                "value" : "variables.error"
+              },
+              "targetUrlOnSuccess" : {
+                "type" : "interpolation"
+              },
+              "collectionToModify" : {
+                "type" : "variable"
+              },
+              "collectionPosition" : {
+                "type" : "constant",
+                "value" : "Last"
+              },
+              "valueToAdd" : {
+                "type" : "constant"
+              },
+              "removeItem" : {
+                "type" : "variable"
+              }
+            },
+            "reference" : "9bdc1c1e-0383-4be0-b041-f861fc7739ac",
+            "id" : "pbButton"
+          } ] ]
+        }
+      } ] ]
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "<hr/>"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "c4bd82ab-b99d-444d-8eda-f88844e5b0ad",
+    "id" : "pbText"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "!variables.watch"
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "a6a8920f-a746-458b-af9d-4167998a08ab",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Information on watch {{variables.watch.SerialNumber}}"
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 3"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "3ca5a317-9e62-4a2b-b695-01b698beb2e1",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "fragment",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        }
+      },
+      "reference" : "e2b4e581-a135-4884-aee6-7a26e8e4cc62",
+      "id" : "watchInfo",
+      "binding" : {
+        "watch" : "variables.watch"
+      }
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "<hr/>"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "34ffe1b0-4a5a-41e4-8814-57124f92ae9c",
+      "id" : "pbText"
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "dbf8cdf5-5cac-43a1-b4eb-fc5d8ced5e83",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Technical Data"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "2a2ed51e-1859-4b1c-92f9-73fb73113dd4",
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "tabsContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "ad2014f1-17f8-4cfa-b7b6-d4231c57652a",
+        "id" : "pbTabsContainer",
+        "tabs" : [ {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "03614e4d-28c9-4b25-a013-83617523c5b4",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "fragment",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "bc4e51d8-bbd1-477d-be16-e90deb85d1cd",
+              "id" : "BillOfMaterial",
+              "binding" : {
+                "watch" : "variables.watch"
+              }
+            } ] ]
+          },
+          "title" : "Bill of Material"
+        }, {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "11ce3dd3-08ee-4629-80f8-875bfb2659b7",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "fragment",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "66b6423a-2020-4f02-99f2-f9cb8f41552d",
+              "id" : "AdaptableStraps",
+              "binding" : {
+                "watch" : "variables.watch"
+              }
+            } ] ]
+          },
+          "title" : "Adaptable Straps"
+        }, {
+          "container" : {
+            "type" : "container",
+            "dimension" : {
+              "xs" : 12
+            },
+            "propertyValues" : { },
+            "reference" : "d4efd76b-4f0a-4378-a0f2-004540947b93",
+            "id" : "pbContainer",
+            "rows" : [ [ {
+              "type" : "fragment",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "7900fd63-bcc2-44b9-94b1-4ec0c9e94549",
+              "id" : "techDatas",
+              "binding" : {
+                "watch" : "variables.watch"
+              }
+            } ] ]
+          },
+          "title" : "Tech. datas"
+        } ]
+      } ] ]
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "Modal-overlay"
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "exp_displayListWatches"
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "8abf8c4b-1491-45a7-9f2b-c972e7deabef",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : "Modal-content"
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "9a19e8f9-81f2-4e20-bfb9-f9b123c4a776",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "headers" : {
+            "type" : "constant",
+            "value" : [ "ProductNumber", "ProductReference", "Description", "BatchMgmtMethod", "SerialNumber", "CaliberCode", "Caliber", "MovementType", "WarrantyDate", "ManufactureDate", "repairWarranties" ]
+          },
+          "content" : {
+            "type" : "expression",
+            "value" : "variables.getWatches.watches"
+          },
+          "columnsKey" : {
+            "type" : "constant",
+            "value" : [ "ProductNumber", "ProductReference", "Description", "BatchMgmtMethod", "SerialNumber", "CaliberCode", "Caliber", "MovementType", "WarrantyDate", "ManufactureDate", "repairWarranties" ]
+          },
+          "selectedRow" : {
+            "type" : "variable",
+            "value" : "variables.selectedWatch"
+          }
+        },
+        "reference" : "52e724ef-f0e9-44fa-8232-9692f40a03bd",
+        "id" : "pbTable"
+      } ] ]
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "expression",
+          "value" : "variables.getWatches.watches.length >0"
+        },
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        }
+      },
+      "reference" : "455c4bb6-0128-4498-b751-f840a390d636",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "jumbotron"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<p>{{\"There is no watch found with this serial number. Get in contact with your serial number creation agent\"|uiTranslate}}</p>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "ae4f379c-cbb2-4d88-989b-8ac8681596c9",
+        "id" : "pbText"
+      } ] ]
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "options" : {
+        "type" : "constant",
+        "value" : "{timeout:3000}"
+      },
+      "toasters" : {
+        "type" : "variable",
+        "value" : "variables.toastrs"
+      }
+    },
+    "reference" : "3e5c5308-f5a9-4def-bec0-5312e4521c3a",
+    "id" : "customToaster"
+  } ] ],
+  "assets" : [ {
+    "id" : "6beb142a-5e83-4cd2-8b8e-84ec6107a061",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "5baa6f90-91d0-42da-bda9-9f5992be71ab",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "variables" : {
+      "type" : "json",
+      "value" : "{\"toastrs\":[], \"error\":\"NOERROR\"}",
+      "exposed" : false
+    },
+    "exp_displayListWatches" : {
+      "type" : "expression",
+      "value" : "if($data.variables.error !== \"NOERROR\"){\n    $data.variables.error = \"NOERROR\";\n    $data.variables.toastrs.push({\"title\":\"There is a technical issue, please contact IT\", \"type\":\"error\"});\n}else{\n    if($data.variables.getWatches && $data.variables.getWatches.watches){\n        \n        if($data.variables.getWatches.watches.length === 1){\n            $data.variables.watch = angular.copy($data.variables.getWatches.watches[0]);\n            $data.variables.getWatches = undefined;\n            $data.variables.selectedWatch = undefined;\n            $data.variables.toastrs.push({\"title\":\"Single Result Found\", \"type\":\"success\"});\n            return true;\n        }else{\n            if($data.variables.getWatches.watches.length === 0){\n                $data.variables.getWatches = undefined;\n                $data.variables.selectedWatch = undefined;\n                $data.variables.toastrs.push({\"title\":\"No results found.\", \"type\":\"warning\"});\n                return true;\n            }else{\n                if($data.variables.selectedWatch){\n                    $data.variables.getWatches = undefined;\n                    $data.variables.watch = $data.variables.selectedWatch;\n                    $data.variables.selectedWatch = undefined;\n                    return true;\n                }else{\n                    return false;\n                }   \n            }\n        }\n    }else{\n        if(!$data.variables.getWatches || !$data.variables.getWatches.watches || $data.variables.getWatches.watches.length<=0){\n                return true;\n            }else{\n                return false;\n            }\n    }\n    /*\n    else{\n        console.log(\"Selected\", $data.variables.selectedWatch)\n        if($data.variables.selectedWatch){\n            $data.variables.getWatches = undefined;\n            $data.variables.watch = $data.variables.selectedWatch;\n            $data.variables.selectedWatch = undefined;\n            return true;\n        }else{\n            if(!$data.variables.getWatches || !$data.variables.getWatches.watches || $data.variables.getWatches.watches.length<=0){\n                return true;\n            }else{\n                return false;\n            }\n        }\n    }\n    */\n}",
+      "exposed" : false
+    }
+  },
+  "uuid" : "f41b9c2d-70ec-446a-b5b5-5751b767bdc3",
+  "type" : "page"
+}

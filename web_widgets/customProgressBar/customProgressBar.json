@@ -1,0 +1,26 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "customProgressBar",
+  "name" : "progressBar",
+  "lastUpdate" : 1538744195495,
+  "template" : "<div class=\"progress\" ng-if=\"isInitialized()\">\r\n  <div ng-if=\"isAssigned()\" class=\"progress-bar progress-bar-info\" style=\"width: {{getSize('wait')}}%\">\r\n    <span class=\"sr-only\">Waiting (warning)</span>\r\n  </div>\r\n  <div ng-if=\"isAssigned() && isExecuted()\" class=\"progress-bar progress-bar-success\" style=\"width: {{getSize('exec')}}%\">\r\n    <span class=\"sr-only\">On Execution</span>\r\n  </div>\r\n  <div ng-if=\"!isAssigned()\" class=\"progress-bar progress-bar-warning progress-bar-striped\" style=\"width: {{getSize('unas')}}%\">\r\n    <span class=\"sr-only\">Not yet Assigned</span>\r\n  </div>\r\n  <div ng-if=\"isAssigned() && !isExecuted()\" class=\"progress-bar progress-bar-danger progress-bar-striped\" style=\"width: {{getSize('exec')}}%\">\r\n    <span class=\"sr-only\">Not yet Assigned</span>\r\n  </div>\r\n</div>\r\n<p>Total Hours:{{getSize('total')}}</p>\r\n",
+  "controller" : "function($scope){\n    var format = \"YYYY-MM-DD HH:mm:ss\";\n    var values ={};\n    initialized = false;\n    $scope.isInitialized= function(){\n        return initialized;\n    }\n    \n    \n    $scope.isExecuted = function (){\n        return $scope.properties.value.archivedDate && $scope.properties.value.archivedDate !== \"\";\n    }\n    $scope.isAssigned = function (){\n        return $scope.properties.value.assigned_date && $scope.properties.value.assigned_date !== \"\";\n    }\n    \n    $scope.getSize= function (item){\n        return values[item];\n    }\n    \n    $scope.$watch('$scope.properties.value',function(){\n        initialized = false;\n        init();\n        \n    })\n    function init(){\n        values ={};\n        var ready  = $scope.properties.value.reached_state_date;\n        var assigned = $scope.properties.value.assigned_date;\n        var archived = $scope.properties.value.archivedDate;\n        \n        //Executed\n        if(archived && archived!==\"\"){\n            var wait = moment(assigned,format).diff(moment(ready,format));\n            var exec = moment(archived,format).diff(moment(assigned,format));\n            var total = moment(archived,format).diff(moment(ready,format));\n         \n            values.wait = (wait/total)*100;\n            values.exec = (exec/total)*100;\n            values.total = Math.floor(moment.duration(total).asHours()) + moment.utc(total).format(\":mm:ss\");\n            \n        }else{\n            //Assigned\n            if(assigned && assigned!==\"\"){\n                var wait = moment(assigned,format).diff(moment(ready,format));\n                var exec = moment().diff(moment(assigned,format));\n                var total = moment().diff(moment(ready,format));\n                values.wait = (wait/total)*100;\n                values.exec = (exec/total)*100;\n                values.total = Math.floor(moment.duration(total).asHours()) + moment.utc(total).format(\":mm:ss\");\n                \n            \n            }else{\n                //Nothing\n                var total = moment().diff(moment(ready,format));\n                values.unas = 100\n                values.total = Math.floor(moment.duration(total).asHours()) + moment.utc(total).format(\":mm:ss\");\n         \n            }\n        }\n        initialized = true;\n    }\n    \n}\n",
+  "custom" : true,
+  "properties" : [ {
+    "label" : "Value",
+    "name" : "value",
+    "type" : "text",
+    "defaultValue" : "This is the initial value",
+    "bond" : "expression"
+  } ],
+  "assets" : [ {
+    "id" : "115efd31-cfd4-4d42-be6b-0e74b4a50e7d",
+    "name" : "/bonita/portal/resource/app/AP/cdn/content/assets/js/moment.min.js",
+    "type" : "js",
+    "order" : 1,
+    "external" : true
+  } ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

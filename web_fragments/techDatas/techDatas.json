@@ -1,0 +1,83 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "techDatas",
+  "name" : "techDatas",
+  "lastUpdate" : 1538573214498,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Data", "Value" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "exp_prepareData"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "data", "value" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 15
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "ed52e6ea-9fda-4031-a711-3dc2ebb72307",
+    "id" : "pbDataTable"
+  } ] ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "watch" : {
+      "type" : "constant",
+      "exposed" : true
+    },
+    "GetTechnicalDatas" : {
+      "type" : "url",
+      "value" : "../API/extension/GetTechnicalData?serial={{watch.ProductNumber}}",
+      "exposed" : false
+    },
+    "exp_prepareData" : {
+      "type" : "expression",
+      "value" : "if($data.GetTechnicalDatas && $data.GetTechnicalDatas.getTechnicalDatas && $data.GetTechnicalDatas.getTechnicalDatas.length >0){\n    var p = $data.GetTechnicalDatas.getTechnicalDatas[0];\n    var output = []\n    for (var key in p) {\n        if (p.hasOwnProperty(key)) {\n            var o = {\"data\":key,\"value\":p[key]}\n            output.push(angular.copy(o));\n        }\n    }\n   return output;\n}",
+      "exposed" : false
+    }
+  },
+  "type" : "fragment"
+}

@@ -1,0 +1,105 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "BillOfMaterial",
+  "name" : "BillOfMaterial",
+  "lastUpdate" : 1538639799968,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 9,
+      "lg" : 9
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "values" : {
+        "type" : "expression",
+        "value" : "exp_prepareData"
+      },
+      "selected" : {
+        "type" : "variable",
+        "value" : "variables.selected"
+      }
+    },
+    "reference" : "aab60ac2-3da7-45de-96c5-3b9d508d71f3",
+    "id" : "customExpTableBillOfMaterial"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 3,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "!variables.selected"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "url" : {
+        "type" : "expression",
+        "value" : "exp_urlDoc"
+      },
+      "document" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "showPreview" : {
+        "type" : "constant",
+        "value" : true
+      }
+    },
+    "reference" : "a3f11e0b-dd76-4e80-b67b-1d87589a7929",
+    "id" : "pbFileViewer"
+  } ] ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "watch" : {
+      "type" : "constant",
+      "exposed" : true
+    },
+    "GetBillOfMaterial" : {
+      "type" : "url",
+      "value" : "../API/extension/GetBillOfMaterial?serial={{watch.ProductNumber}}",
+      "exposed" : false
+    },
+    "exp_headers" : {
+      "type" : "expression",
+      "value" : "\nif($data.GetBillOfMaterial &&\n$data.GetBillOfMaterial.getBillOfMaterial &&\n$data.GetBillOfMaterial.getBillOfMaterial.length >0 ){\n    var p = $data.GetBillOfMaterial.getBillOfMaterial[0];\n    return Object.keys(p)\n}",
+      "exposed" : false
+    },
+    "exp_prepareData" : {
+      "type" : "expression",
+      "value" : "\r\nfunction sortObj(list, key) {\r\n    function compare(a, b) {\r\n        a = a[key];\r\n        b = b[key];\r\n        var type = (typeof(a) === 'string' ||\r\n                    typeof(b) === 'string') ? 'string' : 'number';\r\n        var result;\r\n        if (type === 'string') result = a.localeCompare(b);\r\n        else result = a - b;\r\n        return result;\r\n    }\r\n    return list.sort(compare);\r\n}\r\n\r\nif($data.GetBillOfMaterial && $data.GetBillOfMaterial.getBillOfMaterial && $data.GetBillOfMaterial.getBillOfMaterial.length>0){\r\n    var d = sortObj(angular.copy($data.GetBillOfMaterial.getBillOfMaterial), \"level\");\r\n    var map = {};\r\n    d.forEach(function (item){\r\n        if(item.isLeaf === \"0\" && !item.componentList){\r\n                item.componentList = [];\r\n        }\r\n        if(item.level !== \"1\"){\r\n            map[item.itemNumber].componentList.push(item);\r\n        }\r\n        \r\n        map[item.componentNumber]=item;  \r\n    });\r\n    map = [];\r\n    d.forEach(function (item){\r\n        if(item.level === \"1\"){\r\n                map.push(item);\r\n            }\r\n    });\r\n    return map;\r\n    \r\n    \r\n}\r\n",
+      "exposed" : false
+    },
+    "variables" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    },
+    "exp_urlDoc" : {
+      "type" : "expression",
+      "value" : "if($data.variables.selected){\n    var urlBase = \"https://idmstore.audemarspiguet.com/Item_attachments/tech_sheets/\";\n    var ref = $data.variables.selected.componentNumber.trim()\n    return urlBase + ref + \".pdf\"\n}\n\n",
+      "exposed" : false
+    }
+  },
+  "type" : "fragment"
+}
