@@ -2,14 +2,14 @@
   "designerVersion" : "1.7.64",
   "id" : "DashBoard",
   "name" : "DashBoard",
-  "lastUpdate" : 1538751770678,
+  "lastUpdate" : 1559119315350,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
       "xs" : 12,
       "sm" : 12,
-      "md" : 6,
-      "lg" : 6
+      "md" : 3,
+      "lg" : 4
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -75,8 +75,8 @@
     "dimension" : {
       "xs" : 12,
       "sm" : 12,
-      "md" : 6,
-      "lg" : 6
+      "md" : 3,
+      "lg" : 4
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -136,6 +136,74 @@
       }
     },
     "reference" : "1ea6764b-eb7f-4708-8e04-64d7bd7ff2b1",
+    "id" : "pbLink"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Register the product"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "process"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant",
+        "value" : "GlobalFlow"
+      },
+      "processVersion" : {
+        "type" : "constant",
+        "value" : "1.0"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant",
+        "value" : "AP"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "link"
+      }
+    },
+    "reference" : "5c4a7c15-a569-4847-81ba-8d875b3186eb",
     "id" : "pbLink"
   } ], [ {
     "type" : "container",

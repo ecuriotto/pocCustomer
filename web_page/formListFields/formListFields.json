@@ -1,0 +1,412 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "formListFields",
+  "name" : "formListFields",
+  "lastUpdate" : 1559137909474,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : { },
+    "reference" : "da6bb292-6e0b-4840-a08f-bf123377e829",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 1"
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbTitle"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayName }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "c33862fa-560e-4bf5-976f-a2ab074de709",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbText"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayDescription }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "6db8be7f-7172-48c3-8dab-79ec30cc35e0",
+      "id" : "pbText"
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Description", "LongDescription", "Language", "Key", "ShortDescription" ]
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "Variable"
+      },
+      "apiUrl" : {
+        "type" : "constant",
+        "value" : "../API/"
+      },
+      "params" : {
+        "type" : "constant"
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "responseGetLstTableFields.root.TableFields"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "Description", "LongDescription", "Language", "Key", "ShortDescription" ]
+      },
+      "sortColumns" : {
+        "type" : "constant"
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "pageSize" : {
+        "type" : "constant",
+        "value" : 5
+      },
+      "filter" : {
+        "type" : "constant"
+      }
+    },
+    "reference" : "9529003b-1659-4338-a532-2cee5e5bb1e8",
+    "id" : "pbDataTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "disabled" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Back"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "Submit task"
+      },
+      "url" : {
+        "type" : "interpolation"
+      },
+      "dataToSend" : {
+        "type" : "constant",
+        "value" : "{  \"inputDirection\" : \"REGISTER\"  }"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable",
+        "value" : "continue"
+      },
+      "dataFromError" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "62e92eae-17a5-4b36-824d-ed459777984b",
+    "id" : "pbButton"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "disabled" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Next"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "right"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "success"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "Submit task"
+      },
+      "url" : {
+        "type" : "interpolation"
+      },
+      "dataToSend" : {
+        "type" : "constant",
+        "value" : "{  \"inputDirection\" : \"SERVICES\"  }"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable",
+        "value" : "continue"
+      },
+      "dataFromError" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "3bcf5b24-818b-4dcb-86e3-1ae7c9d4a858",
+    "id" : "pbButton"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "timeToWait" : {
+        "type" : "constant",
+        "value" : 500
+      },
+      "submitButtonSuccessfulResponseValue" : {
+        "type" : "expression",
+        "value" : "continue"
+      },
+      "numberOfRetries" : {
+        "type" : "constant",
+        "value" : 8
+      },
+      "bonitaWebAppName" : {
+        "type" : "constant",
+        "value" : "bonita"
+      },
+      "taskId" : {
+        "type" : "expression",
+        "value" : "taskId"
+      },
+      "messageDisplayed" : {
+        "type" : "constant",
+        "value" : "Searching for current user next task in current case"
+      }
+    },
+    "reference" : "e5a21117-7703-4b7f-9f5f-d1c17e2c7f38",
+    "id" : "customRedirectNextTask"
+  } ] ],
+  "assets" : [ {
+    "id" : "31d4a4ff-678b-4080-8d30-fed0f9bb3258",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "5ed4d5c2-53fc-4988-b795-7399cfcc94e6",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "continue" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "serialNumber" : {
+      "type" : "url",
+      "value" : "../API/bpm/caseVariable/{{task.caseId}}/serialNumber",
+      "exposed" : false
+    },
+    "responseGetLstTableFields" : {
+      "type" : "json",
+      "value" : "{\r\n    \"root\": {\r\n        \"TableFields\": [\r\n            {\r\n                \"Description\": \"Utilisation normale\",\r\n                \"LongDescription\": \"CL-Normal use\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"001\",\r\n                \"ShortDescription\": \"Normal wear\"\r\n            },\r\n            {\r\n                \"Description\": \"Montre accidentée\",\r\n                \"LongDescription\": \"CL-Accident\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"002\",\r\n                \"ShortDescription\": \"Damaged\"\r\n            },\r\n            {\r\n                \"Description\": \"Intervention externe\",\r\n                \"LongDescription\": \"CL-3rd party\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"003\",\r\n                \"ShortDescription\": \"Third party intervention\"\r\n            },\r\n            {\r\n                \"Description\": \"Défaut du produit\",\r\n                \"LongDescription\": \"CL-AP default\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"004\",\r\n                \"ShortDescription\": \"Product defect\"\r\n            },\r\n            {\r\n                \"Description\": \"Entretien de stock\",\r\n                \"LongDescription\": \"INT(I) - Stock\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"005\",\r\n                \"ShortDescription\": \"Stock maintenance\"\r\n            },\r\n            {\r\n                \"Description\": \"Transformation du produit\",\r\n                \"LongDescription\": \"INT(O) - Transf\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"006\",\r\n                \"ShortDescription\": \"Product transformation\"\r\n            },\r\n            {\r\n                \"Description\": \"Défaut à réception\",\r\n                \"LongDescription\": \"INT(A) - Recept\",\r\n                \"Language\": \"GB\",\r\n                \"Key\": \"007\",\r\n                \"ShortDescription\": \"Defect upon receipt\"\r\n            }\r\n        ]\r\n    }\r\n}",
+      "exposed" : false
+    }
+  },
+  "uuid" : "19842fe9-f945-4cb1-a968-a214c0c8f8d8",
+  "type" : "form"
+}

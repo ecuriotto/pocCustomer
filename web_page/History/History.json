@@ -1,0 +1,94 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "History",
+  "name" : "History",
+  "lastUpdate" : 1559128128554,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "History"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 2"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "center"
+      }
+    },
+    "reference" : "ca814e78-7075-4be2-8784-51acf0564913",
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "{{inputParam | json}}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "969672b8-9c21-4539-96c2-52c1bb473b86",
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "3a87c732-a5d1-4713-8a5c-3b6761177820",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "cfaa6a8b-5a9a-4809-8268-c91125c85126",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "inputParam" : {
+      "type" : "urlparameter",
+      "value" : "inputSerialNumber",
+      "exposed" : false
+    }
+  },
+  "uuid" : "8651a748-f242-4ce5-a5c8-055873def2f5",
+  "type" : "page"
+}

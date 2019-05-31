@@ -1,0 +1,261 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "RegisterProductInstantiation1",
+  "name" : "RegisterProductInstantiation",
+  "lastUpdate" : 1559141045552,
+  "rows" : [ [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "d2642745-7a3a-437f-9cd4-cd39555c8641",
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "1843b4bb-8d97-4beb-90b1-e2fefcbdbe77",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "79c05ebd-ed1e-42fe-b4d5-6b87323b2dc5",
+        "id" : "RegisterProductFragment",
+        "binding" : {
+          "formInput" : "formInput",
+          "angForm" : "$form"
+        }
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 8,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "ff0b053d-7220-4c9e-892d-94875923f183",
+        "id" : "pbText"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "md" : 4,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Next"
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Start process"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : "continue"
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "d5c8cd9a-cdb1-4849-809c-d55b1e378b8d",
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "timeToWait" : {
+        "type" : "constant",
+        "value" : 500
+      },
+      "submitButtonSuccessfulResponseValue" : {
+        "type" : "expression",
+        "value" : "continue"
+      },
+      "numberOfRetries" : {
+        "type" : "constant",
+        "value" : 8
+      },
+      "bonitaWebAppName" : {
+        "type" : "constant",
+        "value" : "bonita"
+      },
+      "taskId" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "messageDisplayed" : {
+        "type" : "constant",
+        "value" : "Searching for current user next task in current case"
+      }
+    },
+    "reference" : "a4e86868-119b-4018-93bd-9718e2add52c",
+    "id" : "customRedirectNextTask"
+  } ] ],
+  "assets" : [ {
+    "id" : "2b8673d5-39aa-414b-9027-aacec1f67cce",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "2878ca88-fb41-46cd-bcae-1ea107ece783",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : "{\r\n  \"inputSerialNumber\" : \"\",\r\n  \"inputDirection\" : \"\"\r\n}",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\t'inputSerialNumber': $data.formInput.inputSerialNumber\n};",
+      "exposed" : false
+    },
+    "continue" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "uuid" : "f6165912-a19b-4960-bc02-d423d81ac602",
+  "type" : "form"
+}

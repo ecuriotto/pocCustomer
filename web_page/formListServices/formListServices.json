@@ -1,0 +1,797 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "formListServices",
+  "name" : "formListServices",
+  "lastUpdate" : 1559140606778,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : { },
+    "reference" : "c71fc9cd-4327-4b93-a214-a23a0a730ad5",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 1"
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbTitle"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayName }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "f74d932c-47b1-470a-b4a9-a090ce5fe521",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbText"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayDescription }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "b05cbbf3-bd6f-4644-9a02-820fd2fe2b78",
+      "id" : "pbText"
+    } ] ]
+  } ], [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "1df62ad6-7b9d-4ba2-bdec-01c2941d1d82",
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "d1292fce-c4dd-4af0-bdc1-5bff56c0c626",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : "respGetListServices.root.Services"
+          }
+        },
+        "reference" : "cf2d8159-249d-42cc-9542-097fcf7e47b1",
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 1,
+            "lg" : 3
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "disabled" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : ""
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "$item.selected"
+            }
+          },
+          "reference" : "fb42c524-71e9-49d8-8421-b5098e46c8e0",
+          "id" : "pbCheckbox"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 5,
+            "lg" : 3
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Description"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "$item.Description"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "cf6b2374-7f24-4ca7-b7e1-b3afb3316c72",
+          "id" : "pbInput"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 3,
+            "lg" : 3
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "GroupServices"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "$item.GroupServices"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "fdd6c316-b8d4-41c7-a4e2-6f64fd56c137",
+          "id" : "pbInput"
+        }, {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 3,
+            "lg" : 3
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "minLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "maxLength" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "readOnly" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "Price"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "$item.Price"
+            },
+            "type" : {
+              "type" : "constant",
+              "value" : "text"
+            },
+            "min" : {
+              "type" : "constant"
+            },
+            "max" : {
+              "type" : "constant"
+            },
+            "step" : {
+              "type" : "constant",
+              "value" : 1
+            }
+          },
+          "reference" : "dd2e7b0e-c54b-4ebe-b3f8-18ddaec6fd3c",
+          "id" : "pbInput"
+        } ] ]
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "md" : 6,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Back"
+          },
+          "dataToSend" : {
+            "type" : "constant",
+            "value" : "{  \"inputDirection\" : \"REGISTER\"  }"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : ""
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : "continue"
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "520df603-b0d8-4092-b407-75d6e0951c56",
+        "id" : "pbButton"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 6,
+          "lg" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Next"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "success"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "dataToSend" : {
+            "type" : "constant",
+            "value" : "{  \"inputDirection\" : \"NEXT\"  }"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : "continue"
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "removeItem" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "dd2eecb0-6714-4be2-b30f-d0d9f58c26f7",
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "{{serialNumber}}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "4bf8718b-0bc9-4b2f-b545-e789984f92bb",
+    "id" : "pbText"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 6,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "timeToWait" : {
+        "type" : "constant",
+        "value" : 500
+      },
+      "submitButtonSuccessfulResponseValue" : {
+        "type" : "expression",
+        "value" : "continue"
+      },
+      "numberOfRetries" : {
+        "type" : "constant",
+        "value" : 8
+      },
+      "bonitaWebAppName" : {
+        "type" : "constant",
+        "value" : "bonita"
+      },
+      "taskId" : {
+        "type" : "expression",
+        "value" : "taskId"
+      },
+      "messageDisplayed" : {
+        "type" : "constant",
+        "value" : "Searching for current user next task in current case"
+      }
+    },
+    "reference" : "bfa19b03-a598-4370-b004-1fc825400b2a",
+    "id" : "customRedirectNextTask"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "from serialNumber look in respSearchItemBySerial to get itemId. \nfrom ItemId look in respGetListServices to get watches"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "af708cc3-20d8-4973-b531-b35ef3878e90",
+    "id" : "pbText"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "<pre>{{respGetListServices | json}}</pre>"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "399c4a6a-90f6-4b7a-b0ad-fddfa3011120",
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "f118c661-268e-45f0-8793-9d0660d14aa1",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "8684db7d-aff2-4153-a466-759908752a43",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : "{\r\n  \"inputDirection\" : \"\"\r\n}",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\t'inputDirection': $data.formInput.inputDirection\n};",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "continue" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "serialNumber" : {
+      "type" : "url",
+      "value" : "../API/bpm/caseVariable/{{task.caseId}}/serialNumber",
+      "exposed" : false
+    },
+    "respGetListServices" : {
+      "type" : "json",
+      "value" : "{\r\n    \"root\": {\r\n        \"Services\": [\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Service d'entretien complet\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"20\",\r\n                \"ServiceName\": \"01-COMPLETE SERVICE\",\r\n                \"Price\": \"720.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"0\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Polissage/satinage boite et boucle\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"30\",\r\n                \"ServiceName\": \"02-CASE POLISHING\",\r\n                \"Price\": \"260.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Polissage/satinage boite et bracelet\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"30\",\r\n                \"ServiceName\": \"03-CASE+BR POLISHING\",\r\n                \"Price\": \"460.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0000\",\r\n                \"Description\": \"Changement/adaptation du bracelet\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"0\",\r\n                \"ServiceName\": \"04-STRAP CHANGE\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"5\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Facture immédiate\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Personnalisation coutures bracelet\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"10\",\r\n                \"ServiceName\": \"04-STRAP CUST\",\r\n                \"Price\": \"150.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Service partiel/étanchéité\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"20\",\r\n                \"ServiceName\": \"05-PARTIAL SERVICE\",\r\n                \"Price\": \"520.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"0\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0000\",\r\n                \"Description\": \"Contrôles\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"0\",\r\n                \"ServiceName\": \"21-CONTROLS\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Facture immédiate\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0000\",\r\n                \"Description\": \"Petites interventions\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"0\",\r\n                \"ServiceName\": \"22-BATTERY CHG/REGUL\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Facture immédiate\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Extrait de registre\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"10\",\r\n                \"ServiceName\": \"31-ARCHIVE EXTRACT\",\r\n                \"Price\": \"250.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0001\",\r\n                \"Description\": \"Certificat d'authenticité\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"40\",\r\n                \"ServiceName\": \"32-AUTHENT. CERTIF.\",\r\n                \"Price\": \"1000.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis immédiat prioritaire\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0000\",\r\n                \"Description\": \"Attestation de valeur de remplacement\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"10\",\r\n                \"ServiceName\": \"33-REPLACEMENT VALUE\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"4\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Facture immédiate\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0003\",\r\n                \"Description\": \"Changement de cadran/aiguilles\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"0\",\r\n                \"ServiceName\": \"42-DIAL/HANDS CHG\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"5\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis manuel\"\r\n            },\r\n            {\r\n                \"Item\": \"MTR007710.00\",\r\n                \"GroupServices\": \"2000\",\r\n                \"ServiceFlow\": \"0003\",\r\n                \"Description\": \"Opérations/composants complémentaires\",\r\n                \"Language\": \"FR\",\r\n                \"LeadTime\": \"0\",\r\n                \"ServiceName\": \"43-ADD. OP+PARTS\",\r\n                \"Price\": \"0.000000\",\r\n                \"PriceMethod\": \"null\",\r\n                \"WarrantyEligibility\": \"8\",\r\n                \"ServiceFlowDescription\": \"Devis manuel\"\r\n            }\r\n        ]\r\n    }\r\n}",
+      "exposed" : false
+    },
+    "respSearchItemBySerial" : {
+      "type" : "json",
+      "value" : "[{\r\n\t\t\"root\": {\r\n\t\t\t\"watches\": {\r\n\t\t\t\t\"itemNumber\": \"MTR004188.00\",\r\n\t\t\t\t\"itemReference\": \"26400SO.OO.A002CA.01\",\r\n\t\t\t\t\"caliberId\": \"ICA000450.00\",\r\n\t\t\t\t\"serial\": \"H97425-883039-1948\",\r\n\t\t\t\t\"movementType\": \"DIV\",\r\n\t\t\t\t\"manufacturingDate\": \"20130904\",\r\n\t\t\t\t\"itemDescription\": \"Wristwatch Royal Oak Offshore, silvered extra large jewels, automatic, chronograph, sapphire back, stainless steel and ceramic case, black rubber strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n\t\t\t\t\"caliberDescription\": \"3126/3840\",\r\n\t\t\t\t\"equipmentType\": \"\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004183.00\",\r\n            \"itemReference\": \"26400AU.OO.A002CA.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"H36004-816971-0437\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111102\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak Offshore, black extra large carbon, titanium and ceramic case, black rubber jewels, automatic, chronograph, sapphire back, strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004033.00\",\r\n            \"itemReference\": \"26283ST.OO.D002CA.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H36805-784362-1663\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111025\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, black extra large case , black rubber strap. jewels, automatic, chronograph, stainless steel tapisserie dial with 8 arabic figures cal. 2385, 37\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003713.00\",\r\n            \"itemReference\": \"26068BC.ZZ.D002CR.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H90091-851700-0185\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20130619\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, dial set with 156 diamonds and 8 sapphires, blue m.o.p. Counters cal. 2385, 37 case set with diamonds. jewels, automatic, chronograph, 18 ct white gold\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001635.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.03\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56009-954761-9724\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20151112\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, blue dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001634.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.02\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56061-924615-9776\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150511\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, silvered dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004223.00\",\r\n            \"itemReference\": \"26470ST.OO.A101CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"I68670-926534-9576\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150410\",\r\n            \"itemDescription\": \"3126/3840, 59 jewels, automatic, chronograph, Wristwatch Royal Oak Offshore, black mega sapphire back, stainless steel case. tapisserie dial with 8 arabic figures, cal.\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003891.00\",\r\n            \"itemReference\": \"26170ST.OO.D091CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"G17511-683085-2015\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20080110\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, \\\"\\\"safari\\\"\\\" beige and 3 indexes, cal. 3126/3840, 59 jewels, automatic, chronograph, stainless steel case. extra large tapisserie dial with 8 arabic figures\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n}\r\n\r\n\r\n]",
+      "exposed" : false
+    }
+  },
+  "uuid" : "524c9a0e-4b67-4bb9-9d87-3096400f978c",
+  "type" : "form"
+}

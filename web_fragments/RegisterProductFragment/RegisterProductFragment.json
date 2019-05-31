@@ -1,0 +1,943 @@
+{
+  "designerVersion" : "1.7.64",
+  "id" : "RegisterProductFragment",
+  "name" : "RegisterProductFragment",
+  "lastUpdate" : 1559141250889,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "md" : 7,
+      "sm" : 12,
+      "xs" : 12,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "widgetId" : {
+        "type" : "constant",
+        "value" : "pbInput"
+      },
+      "isDisplayed" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 6
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Input Serial Number"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "text"
+      },
+      "required" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "readonly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "placeholder" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "class" : {
+        "type" : "constant",
+        "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+      },
+      "dimension" : {
+        "type" : "constant",
+        "value" : 12
+      },
+      "value" : {
+        "type" : "variable",
+        "value" : "formInput.inputSerialNumber"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "minLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "maxLength" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "min" : {
+        "type" : "constant"
+      },
+      "max" : {
+        "type" : "constant"
+      },
+      "step" : {
+        "type" : "constant",
+        "value" : 1
+      }
+    },
+    "reference" : "87af474c-1020-4ae6-8f5d-0f7c3cedc8f1",
+    "id" : "pbInput"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 2,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "b443c9af-d548-4065-87ec-8fc0446ab674",
+    "id" : "pbText"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 3,
+      "lg" : 4
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "History"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "page"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "http://"
+      },
+      "pageToken" : {
+        "type" : "constant",
+        "value" : "history"
+      },
+      "processName" : {
+        "type" : "constant"
+      },
+      "processVersion" : {
+        "type" : "constant"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant",
+        "value" : "AP"
+      },
+      "urlParams" : {
+        "type" : "expression",
+        "value" : "formOutput"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "success"
+      }
+    },
+    "reference" : "7edd2408-0755-403c-a193-13029a19dba6",
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 9,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : ""
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "ea9a08e2-b9f8-43b9-af3c-d25b6c87e3aa",
+    "id" : "pbText"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 3,
+      "lg" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "disabled" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "SN not recognized"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "warning"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "Submit task"
+      },
+      "url" : {
+        "type" : "interpolation"
+      },
+      "dataToSend" : {
+        "type" : "constant"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "dataFromError" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "207513d6-799a-48df-ad41-5d92dbf1ba5e",
+    "id" : "pbButton"
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "!result.itemNumber"
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "471533e3-44bd-45ce-9c9a-edf61fe61821",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "itemNumber"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.itemNumber"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "0a4d4de4-cf31-4a31-ae34-f051b58992ee",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "itemReference"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.itemReference"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "f32813b6-6bab-4429-b801-2f4dd192205e",
+      "id" : "pbInput"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "caliberId"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.caliberId"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "b0b9ff6e-4b71-4d65-b25b-8eeb96d6d0ad",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "serial"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.serial"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "daea81ee-dca3-464a-a813-65c58bd3999e",
+      "id" : "pbInput"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "movementType"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.movementType"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "319acae9-cfa7-472a-a2e0-88d4bc93017f",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "manufacturingDate"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.manufacturingDate"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "216c8bf5-59a3-4804-b52e-997e2998e411",
+      "id" : "pbInput"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "itemDescription"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.itemDescription"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "7d347dff-4be2-4118-8964-b33b8b3f06e0",
+      "id" : "pbInput"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "required" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "minLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "maxLength" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "caliberDescription"
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "placeholder" : {
+          "type" : "interpolation"
+        },
+        "value" : {
+          "type" : "variable",
+          "value" : "result.caliberDescription"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "text"
+        },
+        "min" : {
+          "type" : "constant"
+        },
+        "max" : {
+          "type" : "constant"
+        },
+        "step" : {
+          "type" : "constant",
+          "value" : 1
+        }
+      },
+      "reference" : "270bdecc-e287-436d-bfaf-3dec9e50721a",
+      "id" : "pbInput"
+    } ] ]
+  } ] ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "formInput" : {
+      "type" : "constant",
+      "exposed" : true
+    },
+    "temp" : {
+      "type" : "json",
+      "value" : "[]",
+      "exposed" : false
+    },
+    "respSearchItemBySerial" : {
+      "type" : "json",
+      "value" : "[{\r\n\t\t\"root\": {\r\n\t\t\t\"watches\": {\r\n\t\t\t\t\"itemNumber\": \"MTR004188.00\",\r\n\t\t\t\t\"itemReference\": \"26400SO.OO.A002CA.01\",\r\n\t\t\t\t\"caliberId\": \"ICA000450.00\",\r\n\t\t\t\t\"serial\": \"H97425-883039-1948\",\r\n\t\t\t\t\"movementType\": \"DIV\",\r\n\t\t\t\t\"manufacturingDate\": \"20130904\",\r\n\t\t\t\t\"itemDescription\": \"Wristwatch Royal Oak Offshore, silvered extra large jewels, automatic, chronograph, sapphire back, stainless steel and ceramic case, black rubber strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n\t\t\t\t\"caliberDescription\": \"3126/3840\",\r\n\t\t\t\t\"equipmentType\": \"\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004183.00\",\r\n            \"itemReference\": \"26400AU.OO.A002CA.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"H36004-816971-0437\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111102\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak Offshore, black extra large carbon, titanium and ceramic case, black rubber jewels, automatic, chronograph, sapphire back, strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004033.00\",\r\n            \"itemReference\": \"26283ST.OO.D002CA.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H36805-784362-1663\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111025\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, black extra large case , black rubber strap. jewels, automatic, chronograph, stainless steel tapisserie dial with 8 arabic figures cal. 2385, 37\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003713.00\",\r\n            \"itemReference\": \"26068BC.ZZ.D002CR.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H90091-851700-0185\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20130619\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, dial set with 156 diamonds and 8 sapphires, blue m.o.p. Counters cal. 2385, 37 case set with diamonds. jewels, automatic, chronograph, 18 ct white gold\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001635.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.03\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56009-954761-9724\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20151112\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, blue dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001634.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.02\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56061-924615-9776\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150511\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, silvered dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004223.00\",\r\n            \"itemReference\": \"26470ST.OO.A101CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"I68670-926534-9576\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150410\",\r\n            \"itemDescription\": \"3126/3840, 59 jewels, automatic, chronograph, Wristwatch Royal Oak Offshore, black mega sapphire back, stainless steel case. tapisserie dial with 8 arabic figures, cal.\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003891.00\",\r\n            \"itemReference\": \"26170ST.OO.D091CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"G17511-683085-2015\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20080110\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, \\\"\\\"safari\\\"\\\" beige and 3 indexes, cal. 3126/3840, 59 jewels, automatic, chronograph, stainless steel case. extra large tapisserie dial with 8 arabic figures\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n}\r\n\r\n\r\n]",
+      "exposed" : false
+    },
+    "result" : {
+      "type" : "expression",
+      "value" : "if($data.formInput.inputSerialNumber){\n  for(var element of $data.respSearchItemBySerial){\n      if(element.root.watches.serial === $data.formInput.inputSerialNumber){\n          return element.root.watches;\n      }\n      else{\n          continue;\n      }\n  }     \n}\nreturn null; \n\n\n/*\n$data.respSearchItemBySerial.forEach(function(element, i) {\n    \n    \n    } \n*/",
+      "exposed" : false
+    },
+    "angForm" : {
+      "type" : "constant",
+      "exposed" : true
+    }
+  },
+  "type" : "fragment"
+}

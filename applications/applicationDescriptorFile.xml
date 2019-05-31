@@ -5,9 +5,9 @@
         <applicationPages>
             <applicationPage customPage="custompage_cdnAP" token="cdn"/>
             <applicationPage customPage="custompage_DashBoard2" token="dashboard2"/>
+            <applicationPage customPage="custompage_History" token="history"/>
             <applicationPage customPage="custompage_DashBoard" token="dashboard"/>
             <applicationPage customPage="custompage_homeAP" token="searchWatches"/>
-            <applicationPage customPage="custompage_tasklist" token="taskList"/>
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="dashboard">
@@ -15,9 +15,6 @@
             </applicationMenu>
             <applicationMenu applicationPage="searchWatches">
                 <displayName>Search Watch</displayName>
-            </applicationMenu>
-            <applicationMenu applicationPage="taskList">
-                <displayName>TaskList</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>
