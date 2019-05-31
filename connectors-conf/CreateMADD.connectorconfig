@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="webservice" version="1.0.1" name="CreateMADD" modelVersion="7.6.0-002">
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="webservice" version="1.0.1" name="CreateMADD" modelVersion="7.8.3-001">
   <parameters key="serviceNS">
     <expression xsi:type="expression:Expression" name="APWSService" content="APWSService" returnTypeFixed="true"/>
   </parameters>

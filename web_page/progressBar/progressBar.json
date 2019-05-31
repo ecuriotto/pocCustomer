@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "progressBar",
   "name" : "progressBar",
-  "lastUpdate" : 1538673965996,
+  "lastUpdate" : 1559298582803,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -26,6 +27,7 @@
       }
     },
     "reference" : "30eb72b8-1a95-4eb9-920a-9efb71f87f65",
+    "hasValidationError" : false,
     "id" : "customProgressBar"
   } ], [ {
     "type" : "component",
@@ -99,6 +101,7 @@
       }
     },
     "reference" : "a8bf1813-5010-41e3-915c-cd8b14cc3dee",
+    "hasValidationError" : false,
     "id" : "pbInput"
   } ], [ {
     "type" : "component",
@@ -172,6 +175,7 @@
       }
     },
     "reference" : "2ee73b42-d219-4c5d-a854-baf9c16b0ade",
+    "hasValidationError" : false,
     "id" : "pbInput"
   } ], [ {
     "type" : "component",
@@ -245,6 +249,7 @@
       }
     },
     "reference" : "6864c6c0-7a9c-46a6-8e85-718a79837fcd",
+    "hasValidationError" : false,
     "id" : "pbInput"
   } ] ],
   "assets" : [ {
@@ -268,6 +273,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "f31c26a2-de07-45f1-b5d9-dc3abaeef8d6",
-  "type" : "page"
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
 }

@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "formEmpty",
   "name" : "formEmpty",
-  "lastUpdate" : 1538742766994,
+  "lastUpdate" : 1559298582520,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -10,6 +11,7 @@
     },
     "propertyValues" : { },
     "reference" : "30ac5194-22c8-421f-8525-bcf71b26f05e",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -65,6 +67,7 @@
         }
       },
       "reference" : "80db02fd-86f4-4ef9-8e80-21cece7d247f",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "component",
@@ -116,6 +119,7 @@
         }
       },
       "reference" : "0d8b3d6f-b5e9-4f77-8eb9-79dad44f323f",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ] ]
   } ], [ {
@@ -125,6 +129,7 @@
     },
     "propertyValues" : { },
     "reference" : "b1197997-7a3f-43b2-8a2c-a7de19c4b963",
+    "hasValidationError" : false,
     "id" : "pbFormContainer",
     "container" : {
       "type" : "container",
@@ -133,6 +138,7 @@
       },
       "propertyValues" : { },
       "reference" : "a140496a-0880-4d85-8360-d016755c84b7",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -228,6 +234,7 @@
           }
         },
         "reference" : "ebefe4fa-04ac-4d7c-9774-ac6feafb51b9",
+        "hasValidationError" : false,
         "id" : "pbButton"
       } ] ]
     }
@@ -278,6 +285,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "d096fb07-3a06-4776-9a6e-b943418991ab",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

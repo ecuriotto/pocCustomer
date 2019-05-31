@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "newMaintenanceRequestWithLines",
   "name" : "newMaintenanceRequestWithLines",
-  "lastUpdate" : 1538742695508,
+  "lastUpdate" : 1559298582769,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -61,6 +62,7 @@
       }
     },
     "reference" : "0afc070c-e76a-4c6f-8ca3-7833dbb03a15",
+    "hasValidationError" : false,
     "id" : "pbTitle"
   } ], [ {
     "type" : "container",
@@ -115,6 +117,7 @@
       }
     },
     "reference" : "88159aa4-aac3-4e48-8cb2-9381ef3f7508",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -212,6 +215,7 @@
         }
       },
       "reference" : "d42335c6-4e97-435b-9837-8973ba7d2ae0",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -309,6 +313,7 @@
         }
       },
       "reference" : "f6e66473-13b7-4660-9f83-52007b075910",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -380,6 +385,7 @@
         }
       },
       "reference" : "89811f85-cd5f-4b08-8d63-04976531d3ed",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -477,6 +483,7 @@
         }
       },
       "reference" : "d3692b1e-899a-45cb-9726-d8ef83a5eb60",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -548,6 +555,7 @@
         }
       },
       "reference" : "3b6bfc05-afc2-49b3-8209-4d343d4708fc",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -645,6 +653,7 @@
         }
       },
       "reference" : "bcf577ae-6ea0-4ac8-85ce-36eb363868bd",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -716,6 +725,7 @@
         }
       },
       "reference" : "20d0c139-ebd5-43e8-a7d4-64afa8372fdc",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -813,6 +823,7 @@
         }
       },
       "reference" : "789fe41a-fe1e-4870-93da-009968cd36e6",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -884,6 +895,7 @@
         }
       },
       "reference" : "35a105f9-5fd4-481f-975b-939dc9662cb4",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -981,6 +993,7 @@
         }
       },
       "reference" : "faf5e6d0-d598-4d48-ab6c-66e04b2286f2",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1052,6 +1065,7 @@
         }
       },
       "reference" : "dea426fd-32d1-45e6-9c66-5bea91dbc4e6",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1149,6 +1163,7 @@
         }
       },
       "reference" : "3f302296-9878-4174-a8bf-de1b8f111403",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1220,6 +1235,7 @@
         }
       },
       "reference" : "06514f14-0d92-44c0-8042-66274ae3d844",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1317,6 +1333,7 @@
         }
       },
       "reference" : "100eb890-a0cc-48b8-83ad-b3a1d2619bc7",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1388,6 +1405,7 @@
         }
       },
       "reference" : "def93a14-25b9-461e-90ac-df12d9c596b6",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1485,6 +1503,7 @@
         }
       },
       "reference" : "a619ff43-bc6b-4648-857e-1a01fc7de088",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1556,6 +1575,7 @@
         }
       },
       "reference" : "68303f90-ec12-48a6-af55-2c7423a32114",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1653,6 +1673,7 @@
         }
       },
       "reference" : "868d1c5f-58ed-4326-aa75-3d4b8a9eff04",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1724,6 +1745,7 @@
         }
       },
       "reference" : "ffb35921-7fba-4af7-a397-7a86d928d0d3",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1821,6 +1843,7 @@
         }
       },
       "reference" : "85e490bf-002e-4ae2-af12-50652023157a",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -1892,6 +1915,7 @@
         }
       },
       "reference" : "406295f3-9ed6-4748-991c-a0c8d9c1a907",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -1989,6 +2013,7 @@
         }
       },
       "reference" : "e415d4db-3186-4ec7-8f79-8e77d04b1dd9",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2060,6 +2085,7 @@
         }
       },
       "reference" : "683a828f-378d-4420-9e09-52e0a9ff2627",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2157,6 +2183,7 @@
         }
       },
       "reference" : "3427aee2-e58a-49b5-b909-fadc177b757f",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2228,6 +2255,7 @@
         }
       },
       "reference" : "f9ce1d93-1ee0-4ced-925b-a8d4a53d259c",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2325,6 +2353,7 @@
         }
       },
       "reference" : "4cc0f434-256e-4e47-a01c-90941214b1e7",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2396,6 +2425,7 @@
         }
       },
       "reference" : "6025032b-24c9-428b-ac5a-6667050d09de",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2493,6 +2523,7 @@
         }
       },
       "reference" : "3b49ffd5-b290-414c-a5f5-f043cee7ec43",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2564,6 +2595,7 @@
         }
       },
       "reference" : "dbe742cb-2531-4626-ba4c-70fd1d2028a4",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2661,6 +2693,7 @@
         }
       },
       "reference" : "e5fa62f4-d414-4b43-b680-1482de4dcfb7",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2732,6 +2765,7 @@
         }
       },
       "reference" : "0858dac3-809e-4d69-98e9-17f66edeaab9",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2829,6 +2863,7 @@
         }
       },
       "reference" : "2b98f173-846d-4bf6-a442-a30f85cba857",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -2900,6 +2935,7 @@
         }
       },
       "reference" : "9b209c99-609a-4a8f-8527-44ec9e2a7f6c",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -2997,6 +3033,7 @@
         }
       },
       "reference" : "0cfe400e-8ac1-42c7-a74c-30061253bdf2",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -3068,6 +3105,7 @@
         }
       },
       "reference" : "a3eaf33c-6cc5-465d-bd53-1ad190b9fb45",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -3165,6 +3203,7 @@
         }
       },
       "reference" : "aab6ca97-68c1-47a8-88ac-489214dce91a",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ] ]
   } ], [ {
@@ -3190,6 +3229,7 @@
       }
     },
     "reference" : "131a6524-12ca-4136-837a-123aae71edf2",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -3226,6 +3266,7 @@
         }
       },
       "reference" : "7e720621-bcbf-4046-89e9-b0c5690cf6bf",
+      "hasValidationError" : false,
       "id" : "pbCheckbox"
     }, {
       "type" : "component",
@@ -3258,6 +3299,7 @@
         }
       },
       "reference" : "eae5f9c9-2751-483b-9e3c-54e58b49e819",
+      "hasValidationError" : false,
       "id" : "pbText"
     }, {
       "type" : "component",
@@ -3290,6 +3332,7 @@
         }
       },
       "reference" : "e1f1aaa4-cdfd-412e-8b40-90d86bd6ff62",
+      "hasValidationError" : false,
       "id" : "pbText"
     }, {
       "type" : "component",
@@ -3322,6 +3365,7 @@
         }
       },
       "reference" : "3aa20261-ac31-4a22-9e8a-2f47bf788465",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ] ]
   } ], [ {
@@ -3395,6 +3439,7 @@
       }
     },
     "reference" : "cefecd50-6466-4c19-8b7e-a7bd09fd3730",
+    "hasValidationError" : false,
     "id" : "pbButton"
   }, {
     "type" : "component",
@@ -3490,6 +3535,7 @@
       }
     },
     "reference" : "a99242c4-5765-49d3-add9-679349653afc",
+    "hasValidationError" : false,
     "id" : "pbButton"
   } ] ],
   "assets" : [ {
@@ -3528,6 +3574,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "4c9b77c4-16b4-43ce-8143-0523f4a6d895",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }

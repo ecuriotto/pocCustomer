@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "getUsers",
   "name" : "getUsers",
-  "lastUpdate" : 1538551969329,
+  "lastUpdate" : 1559298582628,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -38,6 +39,7 @@
       }
     },
     "reference" : "fd634a6f-3c0e-4306-bc5e-9a3fbfd8b396",
+    "hasValidationError" : false,
     "id" : "pbFileViewer"
   }, {
     "type" : "container",
@@ -62,6 +64,7 @@
       }
     },
     "reference" : "52ffb020-5295-4b23-b82e-33bbb82c3cdc",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -135,6 +138,7 @@
         }
       },
       "reference" : "11fcb559-8e98-42c5-9886-f6f88318c3cd",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -206,6 +210,7 @@
         }
       },
       "reference" : "1da14ffc-8503-41c7-b5a0-22f90a6b46ec",
+      "hasValidationError" : false,
       "id" : "pbButton"
     } ], [ {
       "type" : "component",
@@ -238,6 +243,7 @@
         }
       },
       "reference" : "4d988c9b-dbba-4543-bee2-0b0a4d2845da",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ], [ {
       "type" : "component",
@@ -270,6 +276,7 @@
         }
       },
       "reference" : "36aaeeca-52eb-4f08-9b00-3a9550e53d4d",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ], [ {
       "type" : "component",
@@ -304,6 +311,7 @@
         }
       },
       "reference" : "e28efa07-78d5-488e-a6c5-2b4b4118fb79",
+      "hasValidationError" : false,
       "id" : "pbTable"
     } ], [ {
       "type" : "component",
@@ -392,6 +400,7 @@
         }
       },
       "reference" : "d977d487-958f-4aed-b712-19f50d4502fe",
+      "hasValidationError" : false,
       "id" : "pbDateTimePicker"
     } ] ]
   } ] ],
@@ -420,6 +429,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "d666d92c-2886-449e-81dd-6ad6e32df1fb",
-  "type" : "page"
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
 }

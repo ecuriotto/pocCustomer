@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "homeAP",
   "name" : "homeAP",
-  "lastUpdate" : 1559138616062,
+  "lastUpdate" : 1559298582690,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -26,6 +27,7 @@
       }
     },
     "reference" : "f6bb4ff8-e067-4943-a134-7f49a36e7c64",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -58,6 +60,7 @@
         }
       },
       "reference" : "8b7b68cf-3af8-41c6-a492-b0a88c14d810",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "container",
@@ -82,6 +85,7 @@
         }
       },
       "reference" : "05303171-450b-4b3e-8131-a99d91f68e4e",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "formContainer",
@@ -102,6 +106,7 @@
           }
         },
         "reference" : "7c30ed17-bc68-4efe-9369-6482a74dbc53",
+        "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
           "type" : "container",
@@ -110,6 +115,7 @@
           },
           "propertyValues" : { },
           "reference" : "d6101580-31a9-4e6c-95f5-b0df5634479e",
+          "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [ [ {
             "type" : "component",
@@ -183,6 +189,7 @@
               }
             },
             "reference" : "5eedd461-939a-44cb-a084-aecaa1705b25",
+            "hasValidationError" : false,
             "id" : "pbInput"
           }, {
             "type" : "component",
@@ -254,6 +261,7 @@
               }
             },
             "reference" : "6ce525fe-c890-40f3-b22b-f4b8b20d4505",
+            "hasValidationError" : false,
             "id" : "pbButton"
           }, {
             "type" : "component",
@@ -325,6 +333,7 @@
               }
             },
             "reference" : "9bdc1c1e-0383-4be0-b041-f861fc7739ac",
+            "hasValidationError" : false,
             "id" : "pbButton"
           } ] ]
         }
@@ -361,6 +370,7 @@
       }
     },
     "reference" : "c4bd82ab-b99d-444d-8eda-f88844e5b0ad",
+    "hasValidationError" : false,
     "id" : "pbText"
   } ], [ {
     "type" : "container",
@@ -385,6 +395,7 @@
       }
     },
     "reference" : "a6a8920f-a746-458b-af9d-4167998a08ab",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -417,6 +428,7 @@
         }
       },
       "reference" : "3ca5a317-9e62-4a2b-b695-01b698beb2e1",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "fragment",
@@ -437,6 +449,7 @@
         }
       },
       "reference" : "e2b4e581-a135-4884-aee6-7a26e8e4cc62",
+      "hasValidationError" : false,
       "id" : "watchInfo",
       "binding" : {
         "watch" : "variables.watch"
@@ -472,6 +485,7 @@
         }
       },
       "reference" : "34ffe1b0-4a5a-41e4-8814-57124f92ae9c",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ], [ {
       "type" : "container",
@@ -496,6 +510,7 @@
         }
       },
       "reference" : "dbf8cdf5-5cac-43a1-b4eb-fc5d8ced5e83",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -528,6 +543,7 @@
           }
         },
         "reference" : "2a2ed51e-1859-4b1c-92f9-73fb73113dd4",
+        "hasValidationError" : false,
         "id" : "pbTitle"
       } ], [ {
         "type" : "tabsContainer",
@@ -548,6 +564,7 @@
           }
         },
         "reference" : "ad2014f1-17f8-4cfa-b7b6-d4231c57652a",
+        "hasValidationError" : false,
         "id" : "pbTabsContainer",
         "tabs" : [ {
           "container" : {
@@ -557,6 +574,7 @@
             },
             "propertyValues" : { },
             "reference" : "03614e4d-28c9-4b25-a013-83617523c5b4",
+            "hasValidationError" : false,
             "id" : "pbContainer",
             "rows" : [ [ {
               "type" : "fragment",
@@ -577,6 +595,7 @@
                 }
               },
               "reference" : "bc4e51d8-bbd1-477d-be16-e90deb85d1cd",
+              "hasValidationError" : false,
               "id" : "BillOfMaterial",
               "binding" : {
                 "watch" : "variables.watch"
@@ -592,6 +611,7 @@
             },
             "propertyValues" : { },
             "reference" : "11ce3dd3-08ee-4629-80f8-875bfb2659b7",
+            "hasValidationError" : false,
             "id" : "pbContainer",
             "rows" : [ [ {
               "type" : "fragment",
@@ -612,6 +632,7 @@
                 }
               },
               "reference" : "66b6423a-2020-4f02-99f2-f9cb8f41552d",
+              "hasValidationError" : false,
               "id" : "AdaptableStraps",
               "binding" : {
                 "watch" : "variables.watch"
@@ -627,6 +648,7 @@
             },
             "propertyValues" : { },
             "reference" : "d4efd76b-4f0a-4378-a0f2-004540947b93",
+            "hasValidationError" : false,
             "id" : "pbContainer",
             "rows" : [ [ {
               "type" : "fragment",
@@ -647,6 +669,7 @@
                 }
               },
               "reference" : "7900fd63-bcc2-44b9-94b1-4ec0c9e94549",
+              "hasValidationError" : false,
               "id" : "techDatas",
               "binding" : {
                 "watch" : "variables.watch"
@@ -680,6 +703,7 @@
       }
     },
     "reference" : "8abf8c4b-1491-45a7-9f2b-c972e7deabef",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "container",
@@ -704,6 +728,7 @@
         }
       },
       "reference" : "9a19e8f9-81f2-4e20-bfb9-f9b123c4a776",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -740,6 +765,7 @@
           }
         },
         "reference" : "52e724ef-f0e9-44fa-8232-9692f40a03bd",
+        "hasValidationError" : false,
         "id" : "pbTable"
       } ] ]
     } ], [ {
@@ -765,6 +791,7 @@
         }
       },
       "reference" : "455c4bb6-0128-4498-b751-f840a390d636",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -797,6 +824,7 @@
           }
         },
         "reference" : "ae4f379c-cbb2-4d88-989b-8ac8681596c9",
+        "hasValidationError" : false,
         "id" : "pbText"
       } ] ]
     } ] ]
@@ -827,6 +855,7 @@
       }
     },
     "reference" : "3e5c5308-f5a9-4def-bec0-5312e4521c3a",
+    "hasValidationError" : false,
     "id" : "customToaster"
   } ] ],
   "assets" : [ {
@@ -855,6 +884,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "f41b9c2d-70ec-446a-b5b5-5751b767bdc3",
-  "type" : "page"
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
 }

@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "DashBoard",
   "name" : "DashBoard",
-  "lastUpdate" : 1559119315350,
+  "lastUpdate" : 1559298582413,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -69,6 +70,7 @@
       }
     },
     "reference" : "695e7eec-67ab-468d-bbfe-0a8091911c81",
+    "hasValidationError" : false,
     "id" : "pbLink"
   }, {
     "type" : "component",
@@ -136,6 +138,7 @@
       }
     },
     "reference" : "1ea6764b-eb7f-4708-8e04-64d7bd7ff2b1",
+    "hasValidationError" : false,
     "id" : "pbLink"
   }, {
     "type" : "component",
@@ -204,6 +207,7 @@
       }
     },
     "reference" : "5c4a7c15-a569-4847-81ba-8d875b3186eb",
+    "hasValidationError" : false,
     "id" : "pbLink"
   } ], [ {
     "type" : "container",
@@ -228,6 +232,7 @@
       }
     },
     "reference" : "ba10fae4-3dcc-42e6-8c9d-da922285c699",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -260,6 +265,7 @@
         }
       },
       "reference" : "7f0b8520-36bb-4317-bc27-883e9fa47efd",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "component",
@@ -292,6 +298,7 @@
         }
       },
       "reference" : "504b4977-0c80-4539-ade1-8016a405fe43",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ], [ {
       "type" : "component",
@@ -339,6 +346,7 @@
         }
       },
       "reference" : "dc03be72-7e57-4911-95d1-230be2667299",
+      "hasValidationError" : false,
       "id" : "pbChart"
     }, {
       "type" : "component",
@@ -375,6 +383,7 @@
         }
       },
       "reference" : "d1aac2e2-1bc7-4eb5-86ea-73d34f146c87",
+      "hasValidationError" : false,
       "id" : "pbTable"
     } ] ]
   } ], [ {
@@ -408,6 +417,7 @@
       }
     },
     "reference" : "6172bb7a-1359-451f-8222-e3800b75fcd6",
+    "hasValidationError" : false,
     "id" : "pbText"
   } ], [ {
     "type" : "container",
@@ -432,6 +442,7 @@
       }
     },
     "reference" : "83dce4c9-70f6-4b4b-b0b4-43e628767ab4",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -464,6 +475,7 @@
         }
       },
       "reference" : "b740e94f-99ff-49e2-a183-300dcea87c11",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "component",
@@ -496,6 +508,7 @@
         }
       },
       "reference" : "5846b7f9-4d04-4b5b-aeab-89623de63e97",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ], [ {
       "type" : "container",
@@ -520,6 +533,7 @@
         }
       },
       "reference" : "29367bcd-17fe-46be-a08d-e57aba6af4ea",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "component",
@@ -593,6 +607,7 @@
           }
         },
         "reference" : "ceb7c43e-159e-4bfc-8d14-7dc2a2b60d35",
+        "hasValidationError" : false,
         "id" : "pbInput"
       } ], [ {
         "type" : "component",
@@ -651,6 +666,7 @@
           }
         },
         "reference" : "c0696d25-5710-4917-b240-8e70992543ea",
+        "hasValidationError" : false,
         "id" : "pbDataTable"
       } ] ]
     }, {
@@ -676,6 +692,7 @@
         }
       },
       "reference" : "c186a609-eb9c-4565-a36f-ee1ed0d38e8d",
+      "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
         "type" : "fragment",
@@ -696,6 +713,7 @@
           }
         },
         "reference" : "8c3b1dd5-932a-4376-9d99-fc41a6bdc3bf",
+        "hasValidationError" : false,
         "id" : "progressTasks",
         "binding" : {
           "tasks" : "",
@@ -732,6 +750,7 @@
           }
         },
         "reference" : "21fd57e2-b95b-4b06-8102-aceb2ef3f60a",
+        "hasValidationError" : false,
         "id" : "pbText"
       } ] ]
     } ] ]
@@ -782,6 +801,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "7f3a0b04-ff6c-47a2-b410-7198be8212cf",
-  "type" : "page"
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
 }

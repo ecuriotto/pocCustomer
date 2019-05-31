@@ -50,6 +50,8 @@
         .minutes(time.minutes())
         .seconds(time.seconds())
       );
+    } else {
+      $scope.properties.value = undefined;
     }
   };
 
@@ -71,6 +73,8 @@
           .seconds(0)
         );
       }
+    } else {
+      $scope.properties.value = undefined;
     }
   };
 

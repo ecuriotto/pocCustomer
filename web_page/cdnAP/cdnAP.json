@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "cdnAP",
   "name" : "cdnAP",
-  "lastUpdate" : 1538730776035,
+  "lastUpdate" : 1559298582368,
   "rows" : [ [ ] ],
   "assets" : [ {
     "id" : "886d6220-3950-43f0-9a53-1ba8a015f1d7",
@@ -91,6 +92,8 @@
   } ],
   "inactiveAssets" : [ ],
   "data" : { },
+  "hasValidationError" : false,
   "uuid" : "dccc5065-f0ab-4d92-88b9-f6c2eb45e8db",
-  "type" : "page"
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
 }

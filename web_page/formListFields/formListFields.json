@@ -1,8 +1,9 @@
 {
-  "designerVersion" : "1.7.64",
+  "designerVersion" : "1.8.29",
+  "previousDesignerVersion" : "1.7.64",
   "id" : "formListFields",
   "name" : "formListFields",
-  "lastUpdate" : 1559137909474,
+  "lastUpdate" : 1559298582546,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -10,6 +11,7 @@
     },
     "propertyValues" : { },
     "reference" : "da6bb292-6e0b-4840-a08f-bf123377e829",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -65,6 +67,7 @@
         }
       },
       "reference" : "c33862fa-560e-4bf5-976f-a2ab074de709",
+      "hasValidationError" : false,
       "id" : "pbTitle"
     } ], [ {
       "type" : "component",
@@ -116,6 +119,7 @@
         }
       },
       "reference" : "6db8be7f-7172-48c3-8dab-79ec30cc35e0",
+      "hasValidationError" : false,
       "id" : "pbText"
     } ] ]
   } ], [ {
@@ -174,6 +178,7 @@
       }
     },
     "reference" : "9529003b-1659-4338-a532-2cee5e5bb1e8",
+    "hasValidationError" : false,
     "id" : "pbDataTable"
   } ], [ {
     "type" : "component",
@@ -245,6 +250,7 @@
       }
     },
     "reference" : "62e92eae-17a5-4b36-824d-ed459777984b",
+    "hasValidationError" : false,
     "id" : "pbButton"
   }, {
     "type" : "component",
@@ -316,6 +322,7 @@
       }
     },
     "reference" : "3bcf5b24-818b-4dcb-86e3-1ae7c9d4a858",
+    "hasValidationError" : false,
     "id" : "pbButton"
   } ], [ {
     "type" : "component",
@@ -360,6 +367,7 @@
       }
     },
     "reference" : "e5a21117-7703-4b7f-9f5f-d1c17e2c7f38",
+    "hasValidationError" : false,
     "id" : "customRedirectNextTask"
   } ] ],
   "assets" : [ {
@@ -407,6 +415,8 @@
       "exposed" : false
     }
   },
+  "hasValidationError" : false,
   "uuid" : "19842fe9-f945-4cb1-a968-a214c0c8f8d8",
-  "type" : "form"
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
 }
