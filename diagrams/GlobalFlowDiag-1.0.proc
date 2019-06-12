@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_NNlPwIHtEemSc4tG0R5t-Q" name="GlobalFlowDiag" author="bonitasoft" bonitaVersion="7.8.4" bonitaModelVersion="7.8.3-001" configId="ACED000574001E476C6F62616C466C6F7744696167372E382E332D303031372E382E347370">
     <elements xmi:type="process:Pool" xmi:id="_NNlPwYHtEemSc4tG0R5t-Q" name="GlobalFlow">
       <elements xmi:type="process:Lane" xmi:id="_NNlPwoHtEemSc4tG0R5t-Q" name="Employee lane" actor="_NNlP74HtEemSc4tG0R5t-Q">
@@ -131,7 +131,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_iZvpi4IDEemSc4tG0R5t-Q" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_iZvpioIDEemSc4tG0R5t-Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iZvpjYIDEemSc4tG0R5t-Q">
-            <targetForm xmi:type="expression:Expression" xmi:id="_AI9bkIOdEem5lPg4QGlU8w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_XlkKwIOvEem5lPg4QGlU8w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_iZvpjIIDEemSc4tG0R5t-Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iZvpj4IDEemSc4tG0R5t-Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -221,6 +221,8 @@
         <condition xmi:type="expression:Expression" xmi:id="_IdTDsoIFEemSc4tG0R5t-Q" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_NNlP74HtEemSc4tG0R5t-Q" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_y_BogIOqEem5lPg4QGlU8w" name="urlTalendApi" typeClassname="java.lang.String"/>
+      <parameters xmi:type="parameter:Parameter" xmi:id="_aK_QsIO2Eem5lPg4QGlU8w" name="apToken" typeClassname="java.lang.String"/>
       <contract xmi:type="process:Contract" xmi:id="_NNlP8IHtEemSc4tG0R5t-Q">
         <inputs xmi:type="process:ContractInput" xmi:id="_NNlP8YHtEemSc4tG0R5t-Q" name="inputSerialNumber">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_NNlP8oHtEemSc4tG0R5t-Q"/>

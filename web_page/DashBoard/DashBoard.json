@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.7.64",
   "id" : "DashBoard",
   "name" : "DashBoard",
-  "lastUpdate" : 1559298582413,
+  "lastUpdate" : 1559304935874,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
@@ -203,7 +203,7 @@
       },
       "buttonStyle" : {
         "type" : "constant",
-        "value" : "link"
+        "value" : "danger"
       }
     },
     "reference" : "5c4a7c15-a569-4847-81ba-8d875b3186eb",

@@ -2,14 +2,14 @@
   "designerVersion" : "1.7.64",
   "id" : "RegisterProductFragment",
   "name" : "RegisterProductFragment",
-  "lastUpdate" : 1559141250889,
+  "lastUpdate" : 1559567358495,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
-      "md" : 7,
+      "md" : 4,
       "sm" : 12,
       "xs" : 12,
-      "lg" : 4
+      "lg" : 3
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -99,6 +99,7 @@
       }
     },
     "reference" : "87af474c-1020-4ae6-8f5d-0f7c3cedc8f1",
+    "hasValidationError" : false,
     "id" : "pbInput"
   }, {
     "type" : "component",
@@ -106,7 +107,7 @@
       "xs" : 12,
       "sm" : 12,
       "md" : 2,
-      "lg" : 4
+      "lg" : 3
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -117,28 +118,76 @@
         "type" : "constant",
         "value" : false
       },
-      "allowHTML" : {
+      "disabled" : {
         "type" : "constant",
-        "value" : true
+        "value" : false
       },
-      "text" : {
+      "label" : {
         "type" : "interpolation",
-        "value" : ""
+        "value" : "Search"
       },
       "alignment" : {
         "type" : "constant",
         "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "default"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "GET"
+      },
+      "url" : {
+        "type" : "interpolation",
+        "value" : "{{searchItemBySerial}}{{formInput.inputSerialNumber}}"
+      },
+      "dataToSend" : {
+        "type" : "constant"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable",
+        "value" : "respSearchItemBySerial"
+      },
+      "closeOnSuccess" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "dataFromError" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "modalId" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
       }
     },
-    "reference" : "b443c9af-d548-4065-87ec-8fc0446ab674",
-    "id" : "pbText"
+    "reference" : "466dc605-413a-4fe6-a898-80922e4a0840",
+    "hasValidationError" : false,
+    "id" : "pbButton"
   }, {
     "type" : "component",
     "dimension" : {
       "xs" : 12,
       "sm" : 12,
-      "md" : 3,
-      "lg" : 4
+      "md" : 2,
+      "lg" : 3
     },
     "propertyValues" : {
       "cssClasses" : {
@@ -187,7 +236,7 @@
       },
       "urlParams" : {
         "type" : "expression",
-        "value" : "formOutput"
+        "value" : "formInput"
       },
       "alignment" : {
         "type" : "constant",
@@ -199,7 +248,87 @@
       }
     },
     "reference" : "7edd2408-0755-403c-a193-13029a19dba6",
+    "hasValidationError" : false,
     "id" : "pbLink"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 2,
+      "lg" : 3
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "disabled" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "SN not recognized"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "warning"
+      },
+      "action" : {
+        "type" : "constant",
+        "value" : "Open modal"
+      },
+      "url" : {
+        "type" : "interpolation"
+      },
+      "dataToSend" : {
+        "type" : "constant"
+      },
+      "dataFromSuccess" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "dataFromError" : {
+        "type" : "variable",
+        "value" : ""
+      },
+      "targetUrlOnSuccess" : {
+        "type" : "interpolation"
+      },
+      "collectionToModify" : {
+        "type" : "variable"
+      },
+      "collectionPosition" : {
+        "type" : "constant",
+        "value" : "Last"
+      },
+      "valueToAdd" : {
+        "type" : "constant"
+      },
+      "removeItem" : {
+        "type" : "variable"
+      },
+      "closeOnSuccess" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "modalId" : {
+        "type" : "expression",
+        "value" : "snNotRecognizedModalId"
+      }
+    },
+    "reference" : "207513d6-799a-48df-ad41-5d92dbf1ba5e",
+    "hasValidationError" : false,
+    "id" : "pbButton"
   } ], [ {
     "type" : "component",
     "dimension" : {
@@ -231,77 +360,8 @@
       }
     },
     "reference" : "ea9a08e2-b9f8-43b9-af3c-d25b6c87e3aa",
+    "hasValidationError" : false,
     "id" : "pbText"
-  }, {
-    "type" : "component",
-    "dimension" : {
-      "xs" : 12,
-      "sm" : 12,
-      "md" : 3,
-      "lg" : 6
-    },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "constant",
-        "value" : false
-      },
-      "disabled" : {
-        "type" : "constant",
-        "value" : false
-      },
-      "label" : {
-        "type" : "interpolation",
-        "value" : "SN not recognized"
-      },
-      "alignment" : {
-        "type" : "constant",
-        "value" : "left"
-      },
-      "buttonStyle" : {
-        "type" : "constant",
-        "value" : "warning"
-      },
-      "action" : {
-        "type" : "constant",
-        "value" : "Submit task"
-      },
-      "url" : {
-        "type" : "interpolation"
-      },
-      "dataToSend" : {
-        "type" : "constant"
-      },
-      "dataFromSuccess" : {
-        "type" : "variable",
-        "value" : ""
-      },
-      "dataFromError" : {
-        "type" : "variable",
-        "value" : ""
-      },
-      "targetUrlOnSuccess" : {
-        "type" : "interpolation"
-      },
-      "collectionToModify" : {
-        "type" : "variable"
-      },
-      "collectionPosition" : {
-        "type" : "constant",
-        "value" : "Last"
-      },
-      "valueToAdd" : {
-        "type" : "constant"
-      },
-      "removeItem" : {
-        "type" : "variable"
-      }
-    },
-    "reference" : "207513d6-799a-48df-ad41-5d92dbf1ba5e",
-    "id" : "pbButton"
   } ], [ {
     "type" : "container",
     "dimension" : {
@@ -317,7 +377,7 @@
       },
       "hidden" : {
         "type" : "expression",
-        "value" : "!result.itemNumber"
+        "value" : "!respSearchItemBySerial.root.watches.itemNumber"
       },
       "repeatedCollection" : {
         "type" : "variable",
@@ -325,6 +385,7 @@
       }
     },
     "reference" : "471533e3-44bd-45ce-9c9a-edf61fe61821",
+    "hasValidationError" : false,
     "id" : "pbContainer",
     "rows" : [ [ {
       "type" : "component",
@@ -380,7 +441,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.itemNumber"
+          "value" : "respSearchItemBySerial.root.watches.itemNumber"
         },
         "type" : {
           "type" : "constant",
@@ -398,6 +459,7 @@
         }
       },
       "reference" : "0a4d4de4-cf31-4a31-ae34-f051b58992ee",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -453,7 +515,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.itemReference"
+          "value" : "respSearchItemBySerial.root.watches.itemReference"
         },
         "type" : {
           "type" : "constant",
@@ -471,6 +533,7 @@
         }
       },
       "reference" : "f32813b6-6bab-4429-b801-2f4dd192205e",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -526,7 +589,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.caliberId"
+          "value" : "respSearchItemBySerial.root.watches.caliberId"
         },
         "type" : {
           "type" : "constant",
@@ -544,6 +607,7 @@
         }
       },
       "reference" : "b0b9ff6e-4b71-4d65-b25b-8eeb96d6d0ad",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -599,7 +663,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.serial"
+          "value" : "respSearchItemBySerial.root.watches.serial"
         },
         "type" : {
           "type" : "constant",
@@ -617,6 +681,7 @@
         }
       },
       "reference" : "daea81ee-dca3-464a-a813-65c58bd3999e",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -672,7 +737,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.movementType"
+          "value" : "respSearchItemBySerial.root.watches.movementType"
         },
         "type" : {
           "type" : "constant",
@@ -690,6 +755,7 @@
         }
       },
       "reference" : "319acae9-cfa7-472a-a2e0-88d4bc93017f",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -745,7 +811,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.manufacturingDate"
+          "value" : "respSearchItemBySerial.root.watches.manufacturingDate"
         },
         "type" : {
           "type" : "constant",
@@ -763,6 +829,7 @@
         }
       },
       "reference" : "216c8bf5-59a3-4804-b52e-997e2998e411",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ], [ {
       "type" : "component",
@@ -818,7 +885,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.itemDescription"
+          "value" : "respSearchItemBySerial.root.watches.itemDescription"
         },
         "type" : {
           "type" : "constant",
@@ -836,6 +903,7 @@
         }
       },
       "reference" : "7d347dff-4be2-4118-8964-b33b8b3f06e0",
+      "hasValidationError" : false,
       "id" : "pbInput"
     }, {
       "type" : "component",
@@ -891,7 +959,7 @@
         },
         "value" : {
           "type" : "variable",
-          "value" : "result.caliberDescription"
+          "value" : "respSearchItemBySerial.root.watches.caliberDescription"
         },
         "type" : {
           "type" : "constant",
@@ -909,6 +977,7 @@
         }
       },
       "reference" : "270bdecc-e287-436d-bfaf-3dec9e50721a",
+      "hasValidationError" : false,
       "id" : "pbInput"
     } ] ]
   } ] ],
@@ -926,18 +995,28 @@
     },
     "respSearchItemBySerial" : {
       "type" : "json",
-      "value" : "[{\r\n\t\t\"root\": {\r\n\t\t\t\"watches\": {\r\n\t\t\t\t\"itemNumber\": \"MTR004188.00\",\r\n\t\t\t\t\"itemReference\": \"26400SO.OO.A002CA.01\",\r\n\t\t\t\t\"caliberId\": \"ICA000450.00\",\r\n\t\t\t\t\"serial\": \"H97425-883039-1948\",\r\n\t\t\t\t\"movementType\": \"DIV\",\r\n\t\t\t\t\"manufacturingDate\": \"20130904\",\r\n\t\t\t\t\"itemDescription\": \"Wristwatch Royal Oak Offshore, silvered extra large jewels, automatic, chronograph, sapphire back, stainless steel and ceramic case, black rubber strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n\t\t\t\t\"caliberDescription\": \"3126/3840\",\r\n\t\t\t\t\"equipmentType\": \"\"\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\t{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004183.00\",\r\n            \"itemReference\": \"26400AU.OO.A002CA.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"H36004-816971-0437\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111102\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak Offshore, black extra large carbon, titanium and ceramic case, black rubber jewels, automatic, chronograph, sapphire back, strap. tapisserie dial with 12 indexes, cal. 3126/3840, 59\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004033.00\",\r\n            \"itemReference\": \"26283ST.OO.D002CA.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H36805-784362-1663\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20111025\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, black extra large case , black rubber strap. jewels, automatic, chronograph, stainless steel tapisserie dial with 8 arabic figures cal. 2385, 37\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003713.00\",\r\n            \"itemReference\": \"26068BC.ZZ.D002CR.01\",\r\n            \"caliberId\": \"ICA000677.00\",\r\n            \"serial\": \"H90091-851700-0185\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20130619\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, dial set with 156 diamonds and 8 sapphires, blue m.o.p. Counters cal. 2385, 37 case set with diamonds. jewels, automatic, chronograph, 18 ct white gold\",\r\n            \"caliberDescription\": \"2385\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001635.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.03\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56009-954761-9724\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20151112\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, blue dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR001634.00\",\r\n            \"itemReference\": \"15400ST.OO.1220ST.02\",\r\n            \"caliberId\": \"ICA000127.00\",\r\n            \"serial\": \"I56061-924615-9776\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150511\",\r\n            \"itemDescription\": \"Wristwatch Royal Oak, silvered dial with \\\"\\\"grande case and bracelet. jewels, automatic, sapphire back, stainless steel tapisserie\\\"\\\" pattern and 13 indexes, cal. 3120, 40\",\r\n            \"caliberDescription\": \"3120\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR004223.00\",\r\n            \"itemReference\": \"26470ST.OO.A101CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"I68670-926534-9576\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20150410\",\r\n            \"itemDescription\": \"3126/3840, 59 jewels, automatic, chronograph, Wristwatch Royal Oak Offshore, black mega sapphire back, stainless steel case. tapisserie dial with 8 arabic figures, cal.\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n},\r\n{\r\n    \"root\": {\r\n        \"watches\": {\r\n            \"itemNumber\": \"MTR003891.00\",\r\n            \"itemReference\": \"26170ST.OO.D091CR.01\",\r\n            \"caliberId\": \"ICA000450.00\",\r\n            \"serial\": \"G17511-683085-2015\",\r\n            \"movementType\": \"DIV\",\r\n            \"manufacturingDate\": \"20080110\",\r\n            \"itemDescription\": \"Wrist watch Royal Oak Offshore, \\\"\\\"safari\\\"\\\" beige and 3 indexes, cal. 3126/3840, 59 jewels, automatic, chronograph, stainless steel case. extra large tapisserie dial with 8 arabic figures\",\r\n            \"caliberDescription\": \"3126/3840\",\r\n            \"equipmentType\": \"\"\r\n        }\r\n    }\r\n}\r\n\r\n\r\n]",
+      "value" : "{}\r\n\r\n\r\n",
       "exposed" : false
     },
     "result" : {
       "type" : "expression",
-      "value" : "if($data.formInput.inputSerialNumber){\n  for(var element of $data.respSearchItemBySerial){\n      if(element.root.watches.serial === $data.formInput.inputSerialNumber){\n          return element.root.watches;\n      }\n      else{\n          continue;\n      }\n  }     \n}\nreturn null; \n\n\n/*\n$data.respSearchItemBySerial.forEach(function(element, i) {\n    \n    \n    } \n*/",
+      "value" : "/*\nOLD\n\nif($data.formInput.inputSerialNumber){\n  for(var element of $data.respSearchItemBySerial){\n      if(element.root.watches.serial === $data.formInput.inputSerialNumber){\n          return element.root.watches;\n      }\n      else{\n          continue;\n      }\n  }     \n}\nreturn null; \n\n*/\n/*\n$data.respSearchItemBySerial.forEach(function(element, i) {\n    \n    \n    } \n*/",
       "exposed" : false
     },
     "angForm" : {
       "type" : "constant",
       "exposed" : true
+    },
+    "searchItemBySerial" : {
+      "type" : "constant",
+      "value" : "../API/extension/genericGet?path=ap_pos/common/searchItemBySerial&serialNumber=",
+      "exposed" : false
+    },
+    "snNotRecognizedModalId" : {
+      "type" : "constant",
+      "exposed" : true
     }
   },
+  "hasValidationError" : false,
   "type" : "fragment"
 }
